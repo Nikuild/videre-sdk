@@ -1,0 +1,24 @@
+{
+ "status": "ok",
+ "engine_version": "1.0.0",
+ "wrapper_version": "0.4.0",
+ "requested_at_utc": "2026-10-21T08:13:57Z",
+ "finished_at_utc": "2026-10-21T08:14:00Z",
+ "chain": "solana",
+ "chain_requested": "auto",
+ "address": "Fake111111111111111111111111111111111111127",
+ "cached": false,
+ "cache_age_sec": null,
+ "kind": "address_kind",
+ "result": {
+  "kind": "wallet",
+  "basis": "sol_system_owned",
+  "chain": "solana",
+  "label": "FACT",
+  "owner": "10000000000000000000000000000000",
+  "input": "Fake111111111111111111111111111111111111127",
+  "chain_requested": "auto",
+  "route": "wallet"
+ },
+ "error": null
+}

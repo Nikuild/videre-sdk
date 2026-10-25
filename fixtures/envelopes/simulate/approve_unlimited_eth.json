@@ -1,0 +1,337 @@
+{
+ "status": "ok",
+ "engine_version": "1.0.0",
+ "wrapper_version": "0.4.0",
+ "requested_at_utc": "2026-10-19T18:39:42Z",
+ "finished_at_utc": "2026-10-19T18:40:00Z",
+ "chain": "eth",
+ "chain_requested": "eth",
+ "address": "0x0000000000000000000000000000000000000004",
+ "cached": false,
+ "cache_age_sec": null,
+ "kind": "simulate",
+ "stage": "A",
+ "disclaimer": "Simulation shows what this transaction would do against the CURRENT on-chain state of the forked block. The contract may behave differently later (upgradeable code, owner switches, time / price / balance conditions, a different sender or block). Heuristics, not proof. No flags is not a clearance. Not investment advice.",
+ "result": {
+  "kind": "simulate",
+  "stage": "A",
+  "sim_version": "0.1.0",
+  "chain": "eth",
+  "chain_id": 1,
+  "chain_name": "Ethereum",
+  "native_symbol": "ETH",
+  "generated_at": "2026-10-19T18:39:51Z",
+  "duration_sec": 9,
+  "input": {
+   "mode": "call",
+   "from": "0x0000000000000000000000000000000000000004",
+   "to": "0x0000000000000000000000000000000000000001",
+   "value_wei": "0",
+   "data_bytes": 70,
+   "selector": "0x095ea7b3",
+   "tx_hash": null,
+   "raw_tx_hash": null,
+   "source": "as entered",
+   "original_block": null,
+   "block_mode": null
+  },
+  "fork": {
+   "rpc_host": "ethereum-rpc.publicnode.com",
+   "rpc_failed_before": [],
+   "block_number": 26228472,
+   "block_time_utc": "2026-10-19T18:39:35Z",
+   "label": "FACT",
+   "gas_price_simulated": "0 (fees excluded from balance changes)"
+  },
+  "decoded": {
+   "selector": "0x095ea7b3",
+   "signature": "approve(address,uint256)",
+   "label": "FACT",
+   "source": "blockscout",
+   "args": [
+    {
+     "name": "spender",
+     "type": "address",
+     "value": "0x0000000000000000000000000000000000000105"
+    },
+    {
+     "name": "value",
+     "type": "uint256",
+     "value": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+    }
+   ],
+   "candidates": [],
+   "explorer": {
+    "contract_name": "ExampleTokenProxy",
+    "verified": false,
+    "implementations": [
+     "0x0000000000000000000000000000000000000106"
+    ]
+   },
+   "state_mutability": "nonpayable",
+   "note": "matched the verified contract ABI from the explorer"
+  },
+  "execution": {
+   "status": "success",
+   "label": "FACT",
+   "revert_reason": null,
+   "gas_used": 60000
+  },
+  "native_changes": [
+   {
+    "address": "0x0000000000000000000000000000000000000004",
+    "before_wei": "200000000000000000000000",
+    "after_wei": "200000000000000000000000",
+    "delta_wei": "0",
+    "delta": "0",
+    "sign": "0",
+    "label": "FACT"
+   }
+  ],
+  "token_transfers": [],
+  "approvals": [
+   {
+    "kind": "erc20",
+    "token": "0x0000000000000000000000000000000000000001",
+    "owner": "0x0000000000000000000000000000000000000004",
+    "spender": "0x0000000000000000000000000000000000000105",
+    "amount_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+    "unlimited": true,
+    "unlimited_kind": "max_uint",
+    "revoked": false,
+    "expiration_utc": null,
+    "label": "FACT",
+    "symbol": "XCOIN",
+    "decimals": 6,
+    "amount": "100000000000000000000000000000000000000000000000000000000000000000000000"
+   }
+  ],
+  "contracts_called": [
+   {
+    "address": "0x0000000000000000000000000000000000000001",
+    "call_types": [
+     "CALL"
+    ],
+    "min_depth": 0,
+    "calls": 1,
+    "reverted_calls": 0,
+    "selectors": [
+     "0x095ea7b3"
+    ],
+    "label": "FACT",
+    "has_code": true
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000106",
+    "call_types": [
+     "DELEGATECALL"
+    ],
+    "min_depth": 1,
+    "calls": 1,
+    "reverted_calls": 0,
+    "selectors": [
+     "0x095ea7b3"
+    ],
+    "label": "FACT",
+    "has_code": true
+   }
+  ],
+  "tokens": {
+   "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": {
+    "symbol": "XCOIN",
+    "decimals": 6,
+    "name": "Example Coin",
+    "label": "FACT"
+   }
+  },
+  "unknowns": [],
+  "disclaimer": "Simulation shows what this transaction would do against the CURRENT on-chain state of the forked block. The contract may behave differently later (upgradeable code, owner switches, time / price / balance conditions, a different sender or block). Heuristics, not proof. No flags is not a clearance. Not investment advice.",
+  "explorer": {
+   "base": "https://etherscan.io"
+  },
+  "addresses": [
+   {
+    "address": "0x0000000000000000000000000000000000000105",
+    "roles": [
+     "approval spender"
+    ],
+    "kind": "wallet",
+    "check": {
+     "status": "ok",
+     "engine_kind": "wallet",
+     "generated_at": "2026-10-19T18:39:58Z",
+     "counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "info": 1
+     },
+     "flags_total": 1,
+     "flags": [
+      {
+       "severity": "info",
+       "flag": "funded from cex (INFERENCE)",
+       "evidence": "Exchange C 17",
+       "source": "explorer trace",
+       "label": "INFERENCE",
+       "confidence": null
+      }
+     ],
+     "unknown_sources": [],
+     "unknown_count": 0,
+     "verdict_kind": null,
+     "verdict_label": null,
+     "report_path": null,
+     "label_guess": {
+      "address": "0x0000000000000000000000000000000000000105",
+      "kind": "contract",
+      "label": "ExampleRouterV5",
+      "label_source": "Blockscout tags/name (INFERENCE)",
+      "is_contract": true,
+      "tx_count": 0
+     },
+     "cached": false
+    }
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000001",
+    "roles": [
+     "token",
+     "called contract",
+     "contract called"
+    ],
+    "kind": "token",
+    "check": {
+     "status": "ok",
+     "engine_kind": "token",
+     "generated_at": "2026-10-19T18:39:56Z",
+     "counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 1,
+      "info": 3
+     },
+     "flags_total": 4,
+     "flags": [
+      {
+       "severity": "medium",
+       "flag": "upgradeable proxy (issuer power on established token - explain it)",
+       "evidence": "is_proxy=1",
+       "source": "goplus",
+       "label": "FACT",
+       "confidence": null
+      },
+      {
+       "severity": "info",
+       "flag": "GoPlus omitted owner-power fields -> those powers are UNKNOWN (not 'no')",
+       "evidence": "is_mintable, transfer_pausable, is_blacklisted, owner_change_balance, hidden_owner (typical for GoPlus trust-listed tokens; check the explorer: issuer tokens often have blacklist/pause)",
+       "source": "goplus",
+       "label": "FACT",
+       "confidence": null
+      },
+      {
+       "severity": "info",
+       "flag": "paid DexScreener orders/profile",
+       "evidence": "tokenAd",
+       "source": "dexscreener",
+       "label": "FACT",
+       "confidence": null
+      },
+      {
+       "severity": "info",
+       "flag": "deployer funding from high-volume (INFERENCE)",
+       "evidence": "hop 1: high-volume EOA (CEX/service-like, INFERENCE)",
+       "source": "explorer trace",
+       "label": "INFERENCE",
+       "confidence": null
+      }
+     ],
+     "unknown_sources": [],
+     "unknown_count": 0,
+     "verdict_kind": "no_hard_flags",
+     "verdict_label": "NO HARD FLAGS – ONLY WITH CAVEATS",
+     "report_path": "/r/eth/0x0000000000000000000000000000000000000001",
+     "cached": false
+    }
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000106",
+    "roles": [
+     "contract called"
+    ],
+    "kind": "wallet",
+    "check": {
+     "status": "ok",
+     "engine_kind": "wallet",
+     "generated_at": "2026-10-19T18:40:00Z",
+     "counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "info": 0
+     },
+     "flags_total": 0,
+     "flags": [],
+     "unknown_sources": [],
+     "unknown_count": 0,
+     "verdict_kind": null,
+     "verdict_label": null,
+     "report_path": null,
+     "label_guess": {
+      "address": "0x0000000000000000000000000000000000000106",
+      "kind": "contract",
+      "label": "ExampleTokenV2",
+      "label_source": "Blockscout tags/name (INFERENCE)",
+      "is_contract": true,
+      "tx_count": 100
+     },
+     "cached": false
+    }
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000004",
+    "roles": [
+     "sender (you)"
+    ],
+    "kind": "wallet",
+    "check": {
+     "status": "ok",
+     "engine_kind": "wallet",
+     "generated_at": "2026-10-19T18:39:01Z",
+     "counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "info": 1
+     },
+     "flags_total": 1,
+     "flags": [
+      {
+       "severity": "info",
+       "flag": "funded from high-volume (INFERENCE)",
+       "evidence": "high-volume EOA (CEX/service-like, INFERENCE)",
+       "source": "explorer trace",
+       "label": "INFERENCE",
+       "confidence": null
+      }
+     ],
+     "unknown_sources": [],
+     "unknown_count": 0,
+     "verdict_kind": null,
+     "verdict_label": null,
+     "report_path": null,
+     "label_guess": {
+      "address": "0x0000000000000000000000000000000000000004",
+      "kind": "cex",
+      "label": "Exchange C 14",
+      "label_source": "Videre seed list (INFERENCE)",
+      "is_contract": null,
+      "tx_count": null
+     },
+     "cached": true
+    }
+   }
+  ]
+ },
+ "error": null
+}

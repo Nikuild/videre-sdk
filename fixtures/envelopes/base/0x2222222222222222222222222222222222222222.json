@@ -1,0 +1,17 @@
+{
+ "status": "timeout",
+ "engine_version": "1.0.0",
+ "wrapper_version": "0.1.0",
+ "requested_at_utc": "2026-10-19T14:43:10Z",
+ "finished_at_utc": "2026-10-19T14:48:10Z",
+ "chain": "base",
+ "chain_requested": "base",
+ "address": "0x2222222222222222222222222222222222222222",
+ "cached": false,
+ "cache_age_sec": null,
+ "result": null,
+ "error": {
+  "code": "timeout",
+  "message": "engine timed out after 300s; no automatic retry - try again later (synthetic fixture)"
+ }
+}

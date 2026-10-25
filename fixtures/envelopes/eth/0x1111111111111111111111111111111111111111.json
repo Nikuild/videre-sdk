@@ -1,0 +1,246 @@
+{
+ "status": "ok",
+ "engine_version": "1.0.0",
+ "wrapper_version": "0.1.0",
+ "requested_at_utc": "2026-10-19T14:43:35Z",
+ "finished_at_utc": "2026-10-19T14:43:43Z",
+ "chain": "eth",
+ "chain_requested": "eth",
+ "address": "0x1111111111111111111111111111111111111111",
+ "cached": false,
+ "cache_age_sec": null,
+ "result": {
+  "kind": "token",
+  "input": "0x1111111111111111111111111111111111111111",
+  "chain": "eth",
+  "chain_detection": null,
+  "generated_at": "2026-10-19T14:43:43Z",
+  "tool": "videre-engine 1.0.0",
+  "sections": {
+   "identity": {
+    "source": "dexscreener",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:43:35Z",
+    "cached": false,
+    "data": {
+     "name": "SYNTHETIC FIXTURE",
+     "symbol": "XFIX",
+     "pair_count": 1,
+     "oldest_pair_created": "2021-12-14T10:02:42Z",
+     "oldest_pair_age_days": 2000,
+     "newest_pair_age_days": 2000,
+     "liquidity_usd_total": 5000000,
+     "fdv_usd": null,
+     "mcap_usd": null,
+     "volume_24h_usd": 1000,
+     "txns_24h": {
+      "buys": 1,
+      "sells": 7
+     },
+     "top_pairs": [
+      {
+       "pair": "TFake11111111111111111111111111112",
+       "dex": "sunswap",
+       "quote": "XUSD",
+       "liquidity_usd": 5000000,
+       "created": "2021-12-14T10:02:42Z",
+       "labels": null
+      }
+     ],
+     "pair_addresses": [
+      "TFake11111111111111111111111111112"
+     ],
+     "websites": [
+      "https://exampledex.test/#/home"
+     ],
+     "socials": [
+      "https://example.com/social",
+      "https://example.com/social"
+     ],
+     "boosts_active": 0,
+     "unit": "USD",
+     "note": "liquidity = sum over DexScreener pairs; FDV/mcap are quotes, not depth"
+    },
+    "error": null
+   },
+   "goplus": {
+    "source": "goplus",
+    "status": "FAIL",
+    "fetched_at": "2026-10-19T14:43:36Z",
+    "cached": false,
+    "data": null,
+    "error": "HTTP 429 rate-limited (synthetic fixture) -> UNKNOWN"
+   },
+   "holders": {
+    "source": "goplus (derived)",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:43:36Z",
+    "data": {
+     "top1_pct_ex_lp_burn": 2,
+     "top10_pct_ex_lp_burn": 5,
+     "holder_count": "70000000",
+     "creator_pct": 0,
+     "owner_pct": 0,
+     "top": [
+      {
+       "address": "TFake11111111111111111111111111113",
+       "pct": 2,
+       "is_contract": 0,
+       "tag": "Example Treasury",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111114",
+       "pct": 1,
+       "is_contract": 0,
+       "tag": "Exchange C-Hot 7",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111115",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111116",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111117",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111118",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "Bitfinex",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111119",
+       "pct": 0,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111121",
+       "pct": 0,
+       "is_contract": 0,
+       "tag": "OKX Hot Wallet 8",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111122",
+       "pct": 0,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111123",
+       "pct": 0,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      }
+     ],
+     "excluded": [],
+     "note": "concentration computed by Videre from the source's top-holder list (CEX/lockers are NOT excluded; identity = INFERENCE)"
+    }
+   },
+   "liquidity": {
+    "source": "goplus (derived)",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:43:36Z",
+    "data": {
+     "lp_locked_or_burned_pct": null,
+     "note": "no LP-token holders reported -> UNKNOWN"
+    }
+   },
+   "hype": {
+    "source": "dexscreener+geckoterminal",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:40:44Z",
+    "cached": true,
+    "data": {
+     "boosts_active_on_pairs": 0,
+     "paid_orders": [],
+     "in_dexscreener_top_boosts": false,
+     "in_geckoterminal_trending": true,
+     "note": "boosts/orders = paid promotion; trending = attention. Neither is quality"
+    },
+    "error": null
+   },
+   "dev_trace": {
+    "source": "explorer trace",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:43:38Z",
+    "cached": false,
+    "data": {
+     "deployer": "0x3333333333333333333333333333333333333333",
+     "deployer_source": "goplus.creator_address",
+     "deployer_link": "https://etherscan.io/address/0x3333333333333333333333333333333333333333",
+     "hops": [
+      {
+       "hop": 1,
+       "to": "0x3333333333333333333333333333333333333333",
+       "from": "0x4444444444444444444444444444444444444444",
+       "time": "2026-10-01T09:00:00Z",
+       "amount": 2,
+       "unit": "ETH",
+       "from_kind": "swap",
+       "from_label": "instant-exchange service (synthetic, INFERENCE)",
+       "status": "OK",
+       "link": "https://etherscan.io/tx/0x0000000000000000000000000000000000000000000000000000000000000046"
+      }
+     ],
+     "touches": [],
+     "note": "first-funder walk (earliest incoming value transfer), stop at CEX/mixer/bridge/contract. Labels = INFERENCE; funding link != identity; post-mixer linkage is UNKNOWN by design"
+    },
+    "error": null
+   }
+  },
+  "flags": [
+   {
+    "severity": "info",
+    "flag": "trending on GeckoTerminal (attention only)",
+    "evidence": "trending_pools",
+    "source": "geckoterminal"
+   },
+   {
+    "severity": "medium",
+    "flag": "deployer funded via instant-exchange (no-KYC) service (INFERENCE)",
+    "evidence": "hop 1: synthetic",
+    "source": "explorer trace"
+   }
+  ],
+  "verdict": {
+   "draft_verdict": "WATCH (INCOMPLETE)",
+   "why": "core safety sources UNKNOWN (goplus=FAIL) - cannot clear; synthetic fixture",
+   "established_token_heuristic": false,
+   "incomplete": true,
+   "counts": {
+    "critical": 0,
+    "high": 0,
+    "medium": 1,
+    "info": 1
+   },
+   "note": "DRAFT per desk-heuristics ladder. The analyst writes the final verdict. Heuristics, not proof. No flags ≠ safe. Not investment advice."
+  },
+  "unknown_sources": [
+   "goplus:goplus=FAIL"
+  ],
+  "explorer": "https://etherscan.io/address/0x1111111111111111111111111111111111111111",
+  "disclaimer": "Heuristics, not proof. No flags ≠ safe. Not investment advice."
+ },
+ "error": null
+}

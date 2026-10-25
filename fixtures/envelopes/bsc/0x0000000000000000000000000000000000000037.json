@@ -1,0 +1,482 @@
+{
+ "status": "ok",
+ "engine_version": "1.0.0",
+ "wrapper_version": "0.1.0",
+ "requested_at_utc": "2026-10-19T14:43:10Z",
+ "finished_at_utc": "2026-10-19T14:43:10Z",
+ "chain": "bsc",
+ "chain_requested": "bsc",
+ "address": "0x0000000000000000000000000000000000000037",
+ "cached": false,
+ "cache_age_sec": null,
+ "result": {
+  "kind": "token",
+  "input": "0x0000000000000000000000000000000000000037",
+  "chain": "bsc",
+  "chain_detection": null,
+  "generated_at": "2026-10-19T14:43:10Z",
+  "tool": "videre-engine 1.0.0",
+  "sections": {
+   "identity": {
+    "source": "geckoterminal",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:40:43Z",
+    "cached": true,
+    "data": {
+     "name": "Fixture Honeypot",
+     "symbol": "FIXH",
+     "pair_count": null,
+     "oldest_pair_created": null,
+     "oldest_pair_age_days": null,
+     "liquidity_usd_total": 0,
+     "fdv_usd": null,
+     "mcap_usd": null,
+     "volume_24h_usd": 0,
+     "pair_addresses": [],
+     "unit": "USD",
+     "note": "GeckoTerminal fallback (DexScreener failed: no DexScreener pairs on this chain -> UNKNOWN (fallback GeckoTerminal))"
+    },
+    "error": null,
+    "fallback_from": {
+     "source": "dexscreener",
+     "status": "FAIL",
+     "error": "no DexScreener pairs on this chain -> UNKNOWN (fallback GeckoTerminal)"
+    }
+   },
+   "goplus": {
+    "source": "goplus",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:40:43Z",
+    "cached": true,
+    "data": {
+     "token_name": "Fixture Honeypot",
+     "token_symbol": "FIXH",
+     "is_open_source": "1",
+     "is_proxy": "0",
+     "is_mintable": "1",
+     "owner_address": "0x0000000000000000000000000000000000000038",
+     "owner_change_balance": "1",
+     "can_take_back_ownership": "0",
+     "hidden_owner": "0",
+     "selfdestruct": "0",
+     "external_call": "0",
+     "is_honeypot": "1",
+     "buy_tax": "0",
+     "sell_tax": "",
+     "transfer_tax": "",
+     "cannot_buy": "0",
+     "transfer_pausable": "0",
+     "trading_cooldown": "0",
+     "is_blacklisted": "1",
+     "is_whitelisted": "0",
+     "slippage_modifiable": "0",
+     "personal_slippage_modifiable": "0",
+     "is_anti_whale": "0",
+     "anti_whale_modifiable": "0",
+     "holder_count": "5000",
+     "total_supply": "1000000000000000",
+     "creator_address": "0x0000000000000000000000000000000000000038",
+     "creator_percent": "0",
+     "creator_balance": "5000000000000",
+     "owner_percent": "0",
+     "owner_balance": "5000000000000",
+     "lp_holder_count": "2",
+     "lp_total_supply": "0",
+     "is_in_dex": "1",
+     "honeypot_with_same_creator": "1",
+     "holders": [
+      {
+       "address": "0x0000000000000000000000000000000000000039",
+       "pct": 4,
+       "is_contract": 0,
+       "tag": "",
+       "is_locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000040",
+       "pct": 4,
+       "is_contract": 0,
+       "tag": "",
+       "is_locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000041",
+       "pct": 1,
+       "is_contract": 0,
+       "tag": "",
+       "is_locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000042",
+       "pct": 1,
+       "is_contract": 0,
+       "tag": "",
+       "is_locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000038",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "is_locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000043",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "is_locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000044",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "is_locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000045",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "is_locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000046",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "is_locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000047",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "is_locked": 0
+      }
+     ],
+     "lp_holders": [
+      {
+       "address": "0x0000000000000000000000000000000000000034",
+       "pct": 100,
+       "is_contract": 1,
+       "tag": "",
+       "is_locked": 0,
+       "locked_detail": []
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000000",
+       "pct": 0,
+       "is_contract": 0,
+       "tag": "Null Address",
+       "is_locked": 1,
+       "locked_detail": []
+      }
+     ],
+     "dex": [
+      {
+       "name": "ExampleDexV2",
+       "pair": "0x0000000000000000000000000000000000000048",
+       "liquidity": "0"
+      }
+     ],
+     "note_videre": "'1' = flag true, '0' = false, missing = UNKNOWN. pct fields converted to % by Videre"
+    },
+    "error": null
+   },
+   "blockscout": {
+    "source": "blockscout",
+    "status": "FAIL",
+    "fetched_at": "2026-10-19T14:43:10Z",
+    "data": null,
+    "error": "no keyless Blockscout for bsc -> verification via GoPlus/honeypot.is only"
+   },
+   "honeypot": {
+    "source": "honeypot.is",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:40:43Z",
+    "cached": true,
+    "data": {
+     "simulation_success": true,
+     "is_honeypot": true,
+     "reason": "execution reverted: TransferHelper: TRANSFER_FROM_FAILED: 0x08c379a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000049",
+     "buy_tax_pct": 0,
+     "sell_tax_pct": 100,
+     "transfer_tax_pct": 0,
+     "risk": "honeypot",
+     "risk_level": 100,
+     "flags": [],
+     "open_source": true,
+     "is_proxy": false,
+     "holder_analysis": null,
+     "pair": "0x0000000000000000000000000000000000000048",
+     "pair_liquidity_usd": 0,
+     "pair_created": "2021-05-30T15:22:39Z",
+     "note": "simulation at fetch time only; contract behaviour can change"
+    },
+    "error": null
+   },
+   "holders": {
+    "source": "goplus (derived)",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:40:43Z",
+    "data": {
+     "top1_pct_ex_lp_burn": 4,
+     "top10_pct_ex_lp_burn": 10,
+     "holder_count": "5000",
+     "creator_pct": 0.5,
+     "owner_pct": 0.5,
+     "top": [
+      {
+       "address": "0x0000000000000000000000000000000000000039",
+       "pct": 4,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000040",
+       "pct": 4,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000041",
+       "pct": 1,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000042",
+       "pct": 1,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000038",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000043",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000044",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000045",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000046",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000047",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      }
+     ],
+     "excluded": [],
+     "note": "concentration computed by Videre from the source's top-holder list (CEX/lockers are NOT excluded; identity = INFERENCE)"
+    }
+   },
+   "liquidity": {
+    "source": "goplus (derived)",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:40:43Z",
+    "data": {
+     "lp_locked_pct": 0,
+     "lp_burned_pct": 0,
+     "lp_locked_or_burned_pct": 0,
+     "lock_providers": [
+      "Null Address"
+     ],
+     "lock_end_times": [],
+     "lp_holders": [
+      {
+       "address": "0x0000000000000000000000000000000000000034",
+       "pct": 100,
+       "is_contract": 1,
+       "tag": "",
+       "is_locked": 0,
+       "locked_detail": []
+      },
+      {
+       "address": "0x0000000000000000000000000000000000000000",
+       "pct": 0,
+       "is_contract": 0,
+       "tag": "Null Address",
+       "is_locked": 1,
+       "locked_detail": []
+      }
+     ],
+     "note": "share of the LP token supply (V2-style pools only); V3 positions not covered"
+    }
+   },
+   "hype": {
+    "source": "dexscreener+geckoterminal",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:40:44Z",
+    "cached": true,
+    "data": {
+     "boosts_active_on_pairs": null,
+     "paid_orders": [],
+     "in_dexscreener_top_boosts": false,
+     "in_geckoterminal_trending": false,
+     "note": "boosts/orders = paid promotion; trending = attention. Neither is quality"
+    },
+    "error": null
+   },
+   "dev_trace": {
+    "source": "explorer trace",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:40:46Z",
+    "cached": true,
+    "data": {
+     "deployer": "0x0000000000000000000000000000000000000038",
+     "deployer_source": "goplus.creator_address",
+     "deployer_link": "https://bscscan.com/address/0x0000000000000000000000000000000000000038",
+     "hops": [
+      {
+       "hop": 1,
+       "to": "0x0000000000000000000000000000000000000038",
+       "from": "0x0000000000000000000000000000000000000050",
+       "tx": "0x0000000000000000000000000000000000000000000000000000000000000048",
+       "time": "2021-05-30T14:52:29Z",
+       "amount": 10,
+       "unit": "BNB",
+       "from_kind": "eoa",
+       "from_label": null,
+       "label_source": null,
+       "from_tx_count": 4,
+       "provider": "nodereal",
+       "status": "OK",
+       "label_lookup_error": null,
+       "link": "https://bscscan.com/tx/0x0000000000000000000000000000000000000000000000000000000000000048",
+       "note": null
+      },
+      {
+       "hop": 2,
+       "to": "0x0000000000000000000000000000000000000050",
+       "from": "0x0000000000000000000000000000000000000051",
+       "tx": "0x0000000000000000000000000000000000000000000000000000000000000049",
+       "time": "2021-05-30T14:47:44Z",
+       "amount": 10,
+       "unit": "BNB",
+       "from_kind": "eoa",
+       "from_label": null,
+       "label_source": null,
+       "from_tx_count": 1,
+       "provider": "nodereal",
+       "status": "OK",
+       "label_lookup_error": null,
+       "link": "https://bscscan.com/tx/0x0000000000000000000000000000000000000000000000000000000000000049",
+       "note": null
+      }
+     ],
+     "touches": [],
+     "note": "first-funder walk (earliest incoming value transfer), stop at CEX/mixer/bridge/contract. Labels = INFERENCE; funding link != identity; post-mixer linkage is UNKNOWN by design"
+    },
+    "error": null
+   }
+  },
+  "flags": [
+   {
+    "severity": "critical",
+    "flag": "HONEYPOT (sell simulation failed)",
+    "evidence": "execution reverted: TransferHelper: TRANSFER_FROM_FAILED: 0x08c379a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000049",
+    "source": "honeypot.is"
+   },
+   {
+    "severity": "critical",
+    "flag": "HONEYPOT (GoPlus is_honeypot=1)",
+    "evidence": "is_honeypot=1",
+    "source": "goplus"
+   },
+   {
+    "severity": "critical",
+    "flag": "owner can change balances",
+    "evidence": "owner_change_balance=1",
+    "source": "goplus"
+   },
+   {
+    "severity": "critical",
+    "flag": "dead / dust liquidity (corpse, effectively untradeable)",
+    "evidence": "$0 total DEX liquidity",
+    "source": "geckoterminal"
+   },
+   {
+    "severity": "high",
+    "flag": "high sell tax",
+    "evidence": "100% sell tax (sim)",
+    "source": "honeypot.is"
+   },
+   {
+    "severity": "high",
+    "flag": "creator deployed honeypots before",
+    "evidence": "honeypot_with_same_creator=1",
+    "source": "goplus"
+   },
+   {
+    "severity": "high",
+    "flag": "mintable",
+    "evidence": "is_mintable=1",
+    "source": "goplus"
+   },
+   {
+    "severity": "high",
+    "flag": "blacklist function",
+    "evidence": "is_blacklisted=1",
+    "source": "goplus"
+   },
+   {
+    "severity": "high",
+    "flag": "dead tape (0 volume / 0 txns 24h)",
+    "evidence": "DexScreener h24",
+    "source": "geckoterminal"
+   }
+  ],
+  "verdict": {
+   "draft_verdict": "HARD PASS",
+   "why": "4 critical flag(s): HONEYPOT (sell simulation failed); HONEYPOT (GoPlus is_honeypot=1); owner can change balances",
+   "established_token_heuristic": false,
+   "incomplete": false,
+   "counts": {
+    "critical": 4,
+    "high": 5,
+    "medium": 0,
+    "info": 0
+   },
+   "note": "DRAFT per desk-heuristics ladder. The analyst writes the final verdict. Heuristics, not proof. No flags ≠ safe. Not investment advice."
+  },
+  "unknown_sources": [
+   "blockscout:blockscout=FAIL"
+  ],
+  "explorer": "https://bscscan.com/address/0x0000000000000000000000000000000000000037",
+  "disclaimer": "Heuristics, not proof. No flags ≠ safe. Not investment advice."
+ },
+ "error": null
+}

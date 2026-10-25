@@ -1,0 +1,104 @@
+{
+ "status": "ok",
+ "engine_version": "1.0.0",
+ "wrapper_version": "0.1.0",
+ "requested_at_utc": "2026-10-19T14:43:10Z",
+ "finished_at_utc": "2026-10-19T14:43:10Z",
+ "chain": "bsc",
+ "chain_requested": "bsc",
+ "address": "0x0000000000000000000000000000000000000037",
+ "cached": false,
+ "cache_age_sec": null,
+ "result": {
+  "kind": "token",
+  "input": "0x0000000000000000000000000000000000000037",
+  "chain": "bsc",
+  "chain_detection": null,
+  "generated_at": "2026-10-19T14:43:10Z",
+  "tool": "videre-engine 1.0.0",
+  "sections": {
+   "identity": {
+    "source": "geckoterminal",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:40:43Z",
+    "data": "…"
+   },
+   "goplus": {
+    "source": "goplus",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:40:43Z",
+    "data": "…"
+   },
+   "blockscout": {
+    "source": "blockscout",
+    "status": "FAIL",
+    "fetched_at": "2026-10-19T14:43:10Z",
+    "data": "…"
+   },
+   "honeypot": {
+    "source": "honeypot.is",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:40:43Z",
+    "data": "…"
+   },
+   "holders": {
+    "source": "goplus (derived)",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:40:43Z",
+    "data": "…"
+   },
+   "liquidity": {
+    "source": "goplus (derived)",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:40:43Z",
+    "data": "…"
+   },
+   "hype": {
+    "source": "dexscreener+geckoterminal",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:40:44Z",
+    "data": "…"
+   },
+   "dev_trace": {
+    "source": "explorer trace",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:40:46Z",
+    "data": "…"
+   }
+  },
+  "flags": [
+   {
+    "severity": "critical",
+    "flag": "HONEYPOT (sell simulation failed)",
+    "evidence": "execution reverted: TransferHelper: TRANSFER_FROM_FAILED: 0x08c379a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000049",
+    "source": "honeypot.is"
+   },
+   {
+    "severity": "critical",
+    "flag": "HONEYPOT (GoPlus is_honeypot=1)",
+    "evidence": "is_honeypot=1",
+    "source": "goplus"
+   },
+   "… (9 total)"
+  ],
+  "verdict": {
+   "draft_verdict": "HARD PASS",
+   "why": "4 critical flag(s): HONEYPOT (sell simulation failed); HONEYPOT (GoPlus is_honeypot=1); owner can change balances",
+   "established_token_heuristic": false,
+   "incomplete": false,
+   "counts": {
+    "critical": 4,
+    "high": 5,
+    "medium": 0,
+    "info": 0
+   },
+   "note": "DRAFT per desk-heuristics ladder. The analyst writes the final verdict. Heuristics, not proof. No flags ≠ safe. Not investment advice."
+  },
+  "unknown_sources": [
+   "blockscout:blockscout=FAIL"
+  ],
+  "explorer": "https://bscscan.com/address/0x0000000000000000000000000000000000000037",
+  "disclaimer": "Heuristics, not proof. No flags ≠ safe. Not investment advice."
+ },
+ "error": null
+}

@@ -1,0 +1,27 @@
+{
+ "status": "ok",
+ "engine_version": "1.0.0",
+ "wrapper_version": "0.4.0",
+ "requested_at_utc": "2026-10-21T08:13:57Z",
+ "finished_at_utc": "2026-10-21T08:14:00Z",
+ "chain": null,
+ "chain_requested": "auto",
+ "address": "0x3333333333333333333333333333333333333333",
+ "cached": false,
+ "cache_age_sec": null,
+ "kind": "address_kind",
+ "result": {
+  "kind": "unknown",
+  "basis": "evm_rpc_partial",
+  "chain": null,
+  "label": "UNKNOWN",
+  "failed": [
+   "polygon"
+  ],
+  "reason": "timeout",
+  "input": "0x3333333333333333333333333333333333333333",
+  "chain_requested": "auto",
+  "route": "unknown"
+ },
+ "error": null
+}

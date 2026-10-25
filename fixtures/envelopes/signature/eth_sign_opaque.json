@@ -1,0 +1,123 @@
+{
+ "status": "ok",
+ "engine_version": "1.0.0",
+ "wrapper_version": "0.4.0",
+ "requested_at_utc": "2026-10-19T19:57:29Z",
+ "finished_at_utc": "2026-10-19T19:57:29Z",
+ "chain": {
+  "chain_id": null,
+  "key": null,
+  "name": "UNKNOWN",
+  "source": "none",
+  "label": "UNKNOWN"
+ },
+ "chain_requested": "auto",
+ "address": null,
+ "cached": false,
+ "cache_age_sec": null,
+ "kind": "signature",
+ "stage": "B",
+ "disclaimer": "This is a decode of what the signature request would authorize. It does not prove the signature is valid, that the site will use it as shown, or that the contract will behave the same later. Read-only: nothing is signed, no wallet is connected, nothing is sent on-chain. Heuristics, not proof; no flags ≠ safe.",
+ "result": {
+  "kind": "signature",
+  "stage": "B",
+  "payload_type": "eth_sign",
+  "input": {
+   "format": "rpc_request",
+   "method": "eth_sign",
+   "signer_hint": "0x0000000000000000000000000000000000000004",
+   "signature_present": false
+  },
+  "pattern": {
+   "id": "opaque_eth_sign",
+   "name": "eth_sign (opaque, blind signature)",
+   "label": "UNKNOWN"
+  },
+  "decode": {
+   "label": "FACT",
+   "error": null
+  },
+  "chain": {
+   "chain_id": null,
+   "key": null,
+   "name": "UNKNOWN",
+   "source": "none",
+   "label": "UNKNOWN"
+  },
+  "domain": null,
+  "hashes": null,
+  "grants": [
+   {
+    "kind": "opaque",
+    "pattern": "eth_sign",
+    "label": "UNKNOWN",
+    "until": {
+     "kind": "unknown"
+    },
+    "text": "eth_sign over 32 bytes - what it authorizes is UNKNOWN (opaque).",
+    "summary_en": "eth_sign over 32 bytes - what it authorizes is UNKNOWN (opaque).",
+    "byte_len": 32,
+    "method": "eth_sign"
+   }
+  ],
+  "risk": {
+   "level": "critical",
+   "markers": [
+    {
+     "id": "opaque_eth_sign",
+     "severity": "critical",
+     "label": "FACT",
+     "text": "eth_sign signs RAW bytes: it can be the hash of a transaction, a permit or an order - the content is UNKNOWN and cannot be recovered. Most wallets disabled it because it is the classic blind-signing drain. Do not sign."
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "fields": [
+   {
+    "path": "data",
+    "type": "bytes",
+    "value": "0x0000000000000000000000000000000000000000000000000000000000000001"
+   }
+  ],
+  "fields_truncated": false,
+  "unknowns": [
+   "eth_sign payload: content UNKNOWN (opaque bytes / hash)",
+   "Videre flags UNKNOWN for 1 of 1 addresses (see each row)"
+  ],
+  "notes": [],
+  "unknown_codes": [
+   {
+    "id": "eth_sign_content",
+    "params": {}
+   },
+   {
+    "id": "flags_unchecked",
+    "params": {
+     "n": "1",
+     "total": "1"
+    }
+   }
+  ],
+  "note_codes": [],
+  "disclaimer": "This is a decode of what the signature request would authorize. It does not prove the signature is valid, that the site will use it as shown, or that the contract will behave the same later. Read-only: nothing is signed, no wallet is connected, nothing is sent on-chain. Heuristics, not proof; no flags ≠ safe.",
+  "disclaimer_code": "sig_decode",
+  "generated_at": "2026-10-19T19:57:29Z",
+  "addresses": [
+   {
+    "address": "0x0000000000000000000000000000000000000004",
+    "roles": [
+     "signer (from the request)"
+    ],
+    "kind": "wallet",
+    "check": {
+     "status": "unknown",
+     "reason": "network UNKNOWN (the payload has no chainId) - pick a network and decode again",
+     "flags": [],
+     "counts": null
+    }
+   }
+  ]
+ },
+ "error": null
+}

@@ -1,0 +1,611 @@
+{
+ "status": "ok",
+ "engine_version": "1.0.0",
+ "wrapper_version": "0.4.0",
+ "requested_at_utc": "2026-10-19T18:57:59Z",
+ "finished_at_utc": "2026-10-19T18:58:08Z",
+ "chain": "eth",
+ "chain_requested": "eth",
+ "address": "0x0000000000000000000000000000000000000099",
+ "cached": false,
+ "cache_age_sec": null,
+ "kind": "simulate",
+ "stage": "A",
+ "disclaimer": "Simulation shows what this transaction would do against the CURRENT on-chain state of the forked block. The contract may behave differently later (upgradeable code, owner switches, time / price / balance conditions, a different sender or block). Heuristics, not proof. No flags is not a clearance. Not investment advice.",
+ "result": {
+  "kind": "simulate",
+  "stage": "A",
+  "sim_version": "0.1.0",
+  "chain": "eth",
+  "chain_id": 1,
+  "chain_name": "Ethereum",
+  "native_symbol": "ETH",
+  "generated_at": "2026-10-19T18:58:08Z",
+  "duration_sec": 9,
+  "input": {
+   "mode": "hash",
+   "from": "0x0000000000000000000000000000000000000099",
+   "to": "0x0000000000000000000000000000000000000003",
+   "value_wei": "0",
+   "data_bytes": 300,
+   "selector": "0x791ac947",
+   "tx_hash": "0x0000000000000000000000000000000000000000000000000000000000000066",
+   "raw_tx_hash": null,
+   "source": "fetched by hash from the public RPC",
+   "original_block": 26228542,
+   "block_mode": "parent"
+  },
+  "fork": {
+   "rpc_host": "ethereum-rpc.publicnode.com",
+   "rpc_failed_before": [],
+   "block_number": 26228541,
+   "block_time_utc": "2026-10-19T18:53:23Z",
+   "label": "FACT",
+   "gas_price_simulated": "0 (fees excluded from balance changes)"
+  },
+  "decoded": {
+   "selector": "0x791ac947",
+   "signature": "swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+   "label": "FACT",
+   "source": "blockscout",
+   "args": [
+    {
+     "name": "amountIn",
+     "type": "uint256",
+     "value": "9000000000000000"
+    },
+    {
+     "name": "amountOutMin",
+     "type": "uint256",
+     "value": "0"
+    },
+    {
+     "name": "path",
+     "type": "address[]",
+     "value": "['0x0000000000000000000000000000000000000100', '0x0000000000000000000000000000000000000101']"
+    },
+    {
+     "name": "to",
+     "type": "address",
+     "value": "0x0000000000000000000000000000000000000102"
+    },
+    {
+     "name": "deadline",
+     "type": "uint256",
+     "value": "2000000000"
+    }
+   ],
+   "candidates": [],
+   "explorer": {
+    "contract_name": "ExampleSwapV2Router",
+    "verified": true
+   },
+   "state_mutability": "nonpayable",
+   "note": "matched the verified contract ABI from the explorer"
+  },
+  "execution": {
+   "status": "success",
+   "label": "FACT",
+   "revert_reason": null,
+   "gas_used": 100000
+  },
+  "native_changes": [
+   {
+    "address": "0x0000000000000000000000000000000000000099",
+    "before_wei": "20000000000000000",
+    "after_wei": "20000000000000000",
+    "delta_wei": "0",
+    "delta": "0",
+    "sign": "0",
+    "label": "FACT"
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000101",
+    "before_wei": "2000000000000000000000000",
+    "after_wei": "2000000000000000000000000",
+    "delta_wei": "-20000000000000000",
+    "delta": "0",
+    "sign": "-",
+    "label": "FACT"
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000102",
+    "before_wei": "4000000000000000000",
+    "after_wei": "4000000000000000000",
+    "delta_wei": "20000000000000000",
+    "delta": "0",
+    "sign": "+",
+    "label": "FACT"
+   }
+  ],
+  "token_transfers": [
+   {
+    "standard": "erc20",
+    "token": "0x0000000000000000000000000000000000000100",
+    "from": "0x0000000000000000000000000000000000000099",
+    "to": "0x0000000000000000000000000000000000000103",
+    "amount_raw": "9000000000000000",
+    "token_id": null,
+    "label": "FACT",
+    "symbol": "ExampleC",
+    "decimals": 9,
+    "amount": "9000000"
+   },
+   {
+    "standard": "erc20",
+    "token": "0x0000000000000000000000000000000000000101",
+    "from": "0x0000000000000000000000000000000000000103",
+    "to": "0x0000000000000000000000000000000000000003",
+    "amount_raw": "20000000000000000",
+    "token_id": null,
+    "label": "FACT",
+    "symbol": "XWETH",
+    "decimals": 18,
+    "amount": "0"
+   }
+  ],
+  "approvals": [
+   {
+    "kind": "erc20",
+    "token": "0x0000000000000000000000000000000000000100",
+    "owner": "0x0000000000000000000000000000000000000099",
+    "spender": "0x0000000000000000000000000000000000000003",
+    "amount_raw": "115792089237316195423570985008687907853269984665640564039457564067243225969366",
+    "unlimited": true,
+    "unlimited_kind": "max_uint",
+    "revoked": false,
+    "expiration_utc": null,
+    "label": "FACT",
+    "context": "remaining_after_spend",
+    "context_label": "INFERENCE",
+    "symbol": "ExampleC",
+    "decimals": 9,
+    "amount": "100000000000000000000000000000000000000000000000000000000000000000000"
+   }
+  ],
+  "contracts_called": [
+   {
+    "address": "0x0000000000000000000000000000000000000003",
+    "call_types": [
+     "CALL"
+    ],
+    "min_depth": 0,
+    "calls": 2,
+    "reverted_calls": 0,
+    "selectors": [
+     "0x791ac947"
+    ],
+    "label": "FACT",
+    "has_code": true
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000103",
+    "call_types": [
+     "STATICCALL",
+     "CALL"
+    ],
+    "min_depth": 1,
+    "calls": 4,
+    "reverted_calls": 0,
+    "selectors": [
+     "0x0902f1ac",
+     "0x70a08231",
+     "0x022c0d9f"
+    ],
+    "label": "FACT",
+    "has_code": true
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000101",
+    "call_types": [
+     "CALL",
+     "STATICCALL"
+    ],
+    "min_depth": 1,
+    "calls": 4,
+    "reverted_calls": 0,
+    "selectors": [
+     "0xa9059cbb",
+     "0x70a08231",
+     "0x2e1a7d4d"
+    ],
+    "label": "FACT",
+    "has_code": true
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000100",
+    "call_types": [
+     "CALL",
+     "STATICCALL"
+    ],
+    "min_depth": 1,
+    "calls": 3,
+    "reverted_calls": 0,
+    "selectors": [
+     "0x23b872dd",
+     "0x70a08231"
+    ],
+    "label": "FACT",
+    "has_code": true
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000102",
+    "call_types": [
+     "CALL"
+    ],
+    "min_depth": 1,
+    "calls": 1,
+    "reverted_calls": 0,
+    "selectors": [],
+    "label": "FACT",
+    "has_code": false
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000104",
+    "call_types": [
+     "CALL"
+    ],
+    "min_depth": 2,
+    "calls": 1,
+    "reverted_calls": 0,
+    "selectors": [],
+    "label": "FACT",
+    "has_code": false
+   }
+  ],
+  "tokens": {
+   "0x6597b04d1a24a68051fc19002354457bea38d316": {
+    "symbol": "ExampleC",
+    "decimals": 9,
+    "name": "Example Coin C",
+    "label": "FACT"
+   },
+   "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": {
+    "symbol": "XWETH",
+    "decimals": 18,
+    "name": "Wrapped Example",
+    "label": "FACT"
+   }
+  },
+  "unknowns": [],
+  "disclaimer": "Simulation shows what this transaction would do against the CURRENT on-chain state of the forked block. The contract may behave differently later (upgradeable code, owner switches, time / price / balance conditions, a different sender or block). Heuristics, not proof. No flags is not a clearance. Not investment advice.",
+  "explorer": {
+   "base": "https://etherscan.io"
+  },
+  "addresses": [
+   {
+    "address": "0x0000000000000000000000000000000000000003",
+    "roles": [
+     "approval spender",
+     "called contract",
+     "token recipient",
+     "contract called"
+    ],
+    "kind": "wallet",
+    "check": {
+     "status": "ok",
+     "engine_kind": "wallet",
+     "generated_at": "2026-10-19T18:56:58Z",
+     "counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "info": 0
+     },
+     "flags_total": 0,
+     "flags": [],
+     "unknown_sources": [],
+     "unknown_count": 0,
+     "verdict_kind": null,
+     "verdict_label": null,
+     "report_path": null,
+     "label_guess": {
+      "address": "0x0000000000000000000000000000000000000003",
+      "kind": "contract",
+      "label": "ExampleSwapV2Router",
+      "label_source": "Blockscout tags/name (INFERENCE)",
+      "is_contract": true,
+      "tx_count": 200
+     },
+     "cached": true
+    }
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000103",
+    "roles": [
+     "receives your tokens",
+     "token recipient",
+     "token sender",
+     "contract called"
+    ],
+    "kind": "wallet",
+    "check": {
+     "status": "ok",
+     "engine_kind": "wallet",
+     "generated_at": "2026-10-19T18:56:47Z",
+     "counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "info": 0
+     },
+     "flags_total": 0,
+     "flags": [],
+     "unknown_sources": [],
+     "unknown_count": 0,
+     "verdict_kind": null,
+     "verdict_label": null,
+     "report_path": null,
+     "label_guess": {
+      "address": "0x0000000000000000000000000000000000000103",
+      "kind": "contract",
+      "label": "ExampleSwap V2",
+      "label_source": "Blockscout tags/name (INFERENCE)",
+      "is_contract": true,
+      "tx_count": 0
+     },
+     "cached": true
+    }
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000100",
+    "roles": [
+     "token",
+     "contract called"
+    ],
+    "kind": "token",
+    "check": {
+     "status": "ok",
+     "engine_kind": "token",
+     "generated_at": "2026-10-19T18:56:53Z",
+     "counts": {
+      "critical": 0,
+      "high": 2,
+      "medium": 2,
+      "info": 2
+     },
+     "flags_total": 6,
+     "flags": [
+      {
+       "severity": "high",
+       "flag": "top-10 concentration",
+       "evidence": "100% of supply in top-10 (ex LP/burn; CEX/lockers not excluded)",
+       "source": "goplus (derived)",
+       "label": "FACT",
+       "confidence": null
+      },
+      {
+       "severity": "high",
+       "flag": "top-1 concentration",
+       "evidence": "100%",
+       "source": "goplus (derived)",
+       "label": "FACT",
+       "confidence": null
+      },
+      {
+       "severity": "medium",
+       "flag": "thin book",
+       "evidence": "$5,462 total DEX liquidity",
+       "source": "dexscreener",
+       "label": "FACT",
+       "confidence": null
+      },
+      {
+       "severity": "medium",
+       "flag": "brand-new pairs",
+       "evidence": "oldest pair 0 days",
+       "source": "dexscreener",
+       "label": "FACT",
+       "confidence": null
+      },
+      {
+       "severity": "info",
+       "flag": "paid DexScreener orders/profile",
+       "evidence": "tokenProfile",
+       "source": "dexscreener",
+       "label": "FACT",
+       "confidence": null
+      },
+      {
+       "severity": "info",
+       "flag": "deployer funding from high-volume (INFERENCE)",
+       "evidence": "hop 1: high-volume EOA (CEX/service-like, INFERENCE)",
+       "source": "explorer trace",
+       "label": "INFERENCE",
+       "confidence": null
+      }
+     ],
+     "unknown_sources": [],
+     "unknown_count": 0,
+     "verdict_kind": "hard_pass",
+     "verdict_label": "HARD PASS",
+     "report_path": "/r/eth/0x0000000000000000000000000000000000000100",
+     "cached": true
+    }
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000101",
+    "roles": [
+     "token",
+     "native balance changed",
+     "contract called"
+    ],
+    "kind": "token",
+    "check": {
+     "status": "ok",
+     "engine_kind": "token",
+     "generated_at": "2026-10-19T18:57:03Z",
+     "counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 1,
+      "info": 4
+     },
+     "flags_total": 5,
+     "flags": [
+      {
+       "severity": "medium",
+       "flag": "deployer funded via instant-exchange (no-KYC) service (INFERENCE)",
+       "evidence": "hop 2: ShapeShift (2017-era instant exchange)",
+       "source": "explorer trace",
+       "label": "INFERENCE",
+       "confidence": null
+      },
+      {
+       "severity": "info",
+       "flag": "top-10 concentration",
+       "evidence": "60% of supply in top-10 (ex LP/burn; CEX/lockers not excluded)",
+       "source": "goplus (derived)",
+       "label": "FACT",
+       "confidence": null
+      },
+      {
+       "severity": "info",
+       "flag": "top-1 concentration",
+       "evidence": "20%",
+       "source": "goplus (derived)",
+       "label": "FACT",
+       "confidence": null
+      },
+      {
+       "severity": "info",
+       "flag": "paid DexScreener orders/profile",
+       "evidence": "communityTakeover, tokenProfile",
+       "source": "dexscreener",
+       "label": "FACT",
+       "confidence": null
+      },
+      {
+       "severity": "info",
+       "flag": "trending on GeckoTerminal (attention only)",
+       "evidence": "trending_pools",
+       "source": "geckoterminal",
+       "label": "FACT",
+       "confidence": null
+      }
+     ],
+     "unknown_sources": [],
+     "unknown_count": 0,
+     "verdict_kind": "no_hard_flags",
+     "verdict_label": "NO HARD FLAGS – ONLY WITH CAVEATS",
+     "report_path": "/r/eth/0x0000000000000000000000000000000000000101",
+     "cached": true
+    }
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000099",
+    "roles": [
+     "token sender",
+     "sender (you)"
+    ],
+    "kind": "wallet",
+    "check": {
+     "status": "ok",
+     "engine_kind": "wallet",
+     "generated_at": "2026-10-19T18:55:45Z",
+     "counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "info": 0
+     },
+     "flags_total": 0,
+     "flags": [],
+     "unknown_sources": [],
+     "unknown_count": 0,
+     "verdict_kind": null,
+     "verdict_label": null,
+     "report_path": null,
+     "label_guess": {
+      "address": "0x0000000000000000000000000000000000000099",
+      "kind": "eoa",
+      "label": null,
+      "label_source": null,
+      "is_contract": false,
+      "tx_count": 0
+     },
+     "cached": true
+    }
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000102",
+    "roles": [
+     "native balance changed",
+     "contract called"
+    ],
+    "kind": "wallet",
+    "check": {
+     "status": "ok",
+     "engine_kind": "wallet",
+     "generated_at": "2026-10-19T18:57:02Z",
+     "counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "info": 0
+     },
+     "flags_total": 0,
+     "flags": [],
+     "unknown_sources": [],
+     "unknown_count": 0,
+     "verdict_kind": null,
+     "verdict_label": null,
+     "report_path": null,
+     "label_guess": {
+      "address": "0x0000000000000000000000000000000000000102",
+      "kind": "eoa",
+      "label": null,
+      "label_source": null,
+      "is_contract": false,
+      "tx_count": 0
+     },
+     "cached": true
+    }
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000104",
+    "roles": [
+     "contract called"
+    ],
+    "kind": "wallet",
+    "check": {
+     "status": "ok",
+     "engine_kind": "wallet",
+     "generated_at": "2026-10-19T18:57:04Z",
+     "counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "info": 1
+     },
+     "flags_total": 1,
+     "flags": [
+      {
+       "severity": "info",
+       "flag": "funded from high-volume (INFERENCE)",
+       "evidence": "high-volume EOA (CEX/service-like, INFERENCE)",
+       "source": "explorer trace",
+       "label": "INFERENCE",
+       "confidence": null
+      }
+     ],
+     "unknown_sources": [],
+     "unknown_count": 0,
+     "verdict_kind": null,
+     "verdict_label": null,
+     "report_path": null,
+     "label_guess": {
+      "address": "0x0000000000000000000000000000000000000104",
+      "kind": "eoa",
+      "label": null,
+      "label_source": null,
+      "is_contract": false,
+      "tx_count": 0
+     },
+     "cached": true
+    }
+   }
+  ]
+ },
+ "error": null
+}

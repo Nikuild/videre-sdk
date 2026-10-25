@@ -1,0 +1,1463 @@
+{
+ "generic_mail": {
+  "pattern": {
+   "id": "generic_eip712",
+   "name": "EIP-712 typed data (Mail) - shape not recognised",
+   "label": "UNKNOWN"
+  },
+  "chain": {
+   "chain_id": 1,
+   "key": "eth",
+   "name": "Ethereum",
+   "source": "domain.chainId",
+   "label": "FACT"
+  },
+  "domain": {
+   "name": "Ether Mail",
+   "chainId": "1"
+  },
+  "hashes": {
+   "domain_separator": "0x0000000000000000000000000000000000000000000000000000000000000010",
+   "struct_hash": "0x0000000000000000000000000000000000000000000000000000000000000011",
+   "digest": "0x0000000000000000000000000000000000000000000000000000000000000012",
+   "primary_type_encoding": "Mail(address to,string contents)",
+   "label": "FACT",
+   "note": "computed offline from the payload (EIP-712). Compare the digest with what your wallet shows - if they differ, the wallet signs something else."
+  },
+  "input": {
+   "format": "typed_data_json",
+   "method": null,
+   "signer_hint": null,
+   "signature_present": false
+  },
+  "grants": [
+   {
+    "kind": "generic",
+    "pattern": "generic_eip712",
+    "who": "0x0000000000000000000000000000000000000010",
+    "label": "UNKNOWN",
+    "primary_type": "Mail",
+    "text": "Typed data of type Mail is not a recognised Permit / Permit2 / approval shape - what it authorizes is UNKNOWN; every signed field is listed below. It names 0x0000000000000000000000000000000000000010 as a counterparty (INFERENCE).",
+    "until": {
+     "kind": "unknown"
+    },
+    "summary_en": "Typed data of type Mail is not a recognised Permit / Permit2 / approval shape - what it authorizes is UNKNOWN; every signed field is listed below. It names 0x0000000000000000000000000000000000000010 as a counterparty (INFERENCE)."
+   }
+  ],
+  "risk": {
+   "level": "medium",
+   "markers": [
+    {
+     "id": "no_verifying_contract",
+     "severity": "medium",
+     "label": "FACT",
+     "text": "domain has no verifyingContract - the signature is not bound to one contract"
+    },
+    {
+     "id": "unrecognised_typed_data",
+     "severity": "medium",
+     "label": "UNKNOWN",
+     "text": "unrecognised typed-data type Mail: effect UNKNOWN - read every field before signing"
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [
+   "effect of Mail typed data UNKNOWN (not a recognised shape)"
+  ],
+  "notes": [],
+  "unknown_codes": [
+   {
+    "id": "generic_effect",
+    "params": {
+     "type": "Mail"
+    }
+   }
+  ],
+  "note_codes": []
+ },
+ "generic_no_counterparty": {
+  "pattern": {
+   "id": "generic_eip712",
+   "name": "EIP-712 typed data (Mail) - shape not recognised",
+   "label": "UNKNOWN"
+  },
+  "chain": {
+   "chain_id": 1,
+   "key": "eth",
+   "name": "Ethereum",
+   "source": "domain.chainId",
+   "label": "FACT"
+  },
+  "domain": {
+   "name": "Ether Mail",
+   "chainId": "1"
+  },
+  "hashes": {
+   "domain_separator": "0x0000000000000000000000000000000000000000000000000000000000000010",
+   "struct_hash": "0x0000000000000000000000000000000000000000000000000000000000000013",
+   "digest": "0x0000000000000000000000000000000000000000000000000000000000000014",
+   "primary_type_encoding": "Mail(string contents)",
+   "label": "FACT",
+   "note": "computed offline from the payload (EIP-712). Compare the digest with what your wallet shows - if they differ, the wallet signs something else."
+  },
+  "input": {
+   "format": "typed_data_json",
+   "method": null,
+   "signer_hint": null,
+   "signature_present": false
+  },
+  "grants": [
+   {
+    "kind": "generic",
+    "pattern": "generic_eip712",
+    "who": null,
+    "label": "UNKNOWN",
+    "primary_type": "Mail",
+    "text": "Typed data of type Mail is not a recognised Permit / Permit2 / approval shape - what it authorizes is UNKNOWN; every signed field is listed below.",
+    "until": {
+     "kind": "unknown"
+    },
+    "summary_en": "Typed data of type Mail is not a recognised Permit / Permit2 / approval shape - what it authorizes is UNKNOWN; every signed field is listed below."
+   }
+  ],
+  "risk": {
+   "level": "medium",
+   "markers": [
+    {
+     "id": "no_verifying_contract",
+     "severity": "medium",
+     "label": "FACT",
+     "text": "domain has no verifyingContract - the signature is not bound to one contract"
+    },
+    {
+     "id": "unrecognised_typed_data",
+     "severity": "medium",
+     "label": "UNKNOWN",
+     "text": "unrecognised typed-data type Mail: effect UNKNOWN - read every field before signing"
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [
+   "effect of Mail typed data UNKNOWN (not a recognised shape)"
+  ],
+  "notes": [],
+  "unknown_codes": [
+   {
+    "id": "generic_effect",
+    "params": {
+     "type": "Mail"
+    }
+   }
+  ],
+  "note_codes": []
+ },
+ "safe_transfer_delegate": {
+  "pattern": {
+   "id": "safe_tx",
+   "name": "Safe{Wallet} transaction (SafeTx) - executes a call from the multisig",
+   "label": "INFERENCE"
+  },
+  "chain": {
+   "chain_id": 1,
+   "key": "eth",
+   "name": "Ethereum",
+   "source": "domain.chainId",
+   "label": "FACT"
+  },
+  "domain": {
+   "chainId": "1",
+   "verifyingContract": "0x0000000000000000000000000000000000000011"
+  },
+  "hashes": {
+   "domain_separator": "0x0000000000000000000000000000000000000000000000000000000000000015",
+   "struct_hash": "0x0000000000000000000000000000000000000000000000000000000000000016",
+   "digest": "0x0000000000000000000000000000000000000000000000000000000000000017",
+   "primary_type_encoding": "SafeTx(address to,uint256 value,bytes data,uint8 operation)",
+   "label": "FACT",
+   "note": "computed offline from the payload (EIP-712). Compare the digest with what your wallet shows - if they differ, the wallet signs something else."
+  },
+  "input": {
+   "format": "typed_data_json",
+   "method": null,
+   "signer_hint": null,
+   "signature_present": false
+  },
+  "grants": [
+   {
+    "kind": "safe_call",
+    "pattern": "safe_tx",
+    "who": "0x6666666666666666666666666666666666666666",
+    "text": "The Safe 0x0000000000000000000000000000000000000011 would DELEGATECALL 0x6666666666666666666666666666666666666666 with 7 wei running transfer(address,uint256) (0x7777777777777777777777777777777777777777, 5).",
+    "label": "FACT",
+    "until": {
+     "kind": "none"
+    },
+    "safe_call": {
+     "safe": "0x0000000000000000000000000000000000000011",
+     "to": "0x6666666666666666666666666666666666666666",
+     "operation": 1,
+     "value_wei": "7",
+     "selector": "0xa9059cbb",
+     "function": "transfer(address,uint256)",
+     "args": [
+      "0x7777777777777777777777777777777777777777",
+      "5"
+     ]
+    },
+    "summary_en": "The Safe 0x0000000000000000000000000000000000000011 would DELEGATECALL 0x6666666666666666666666666666666666666666 with 7 wei running transfer(address,uint256) (0x7777777777777777777777777777777777777777, 5)."
+   }
+  ],
+  "risk": {
+   "level": "critical",
+   "markers": [
+    {
+     "id": "delegatecall",
+     "severity": "critical",
+     "label": "FACT",
+     "text": "operation = 1 (DELEGATECALL): the target's code runs with the Safe's full storage and funds - this is how Safe wallets get drained (e.g. masterCopy swap)"
+    },
+    {
+     "id": "safe_dangerous_call",
+     "severity": "high",
+     "label": "FACT",
+     "text": "the Safe transaction calls transfer(address,uint256) - approvals, transfers or owner / module changes"
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [],
+  "notes": [],
+  "unknown_codes": [],
+  "note_codes": []
+ },
+ "safe_unknown_selector": {
+  "pattern": {
+   "id": "safe_tx",
+   "name": "Safe{Wallet} transaction (SafeTx) - executes a call from the multisig",
+   "label": "INFERENCE"
+  },
+  "chain": {
+   "chain_id": 1,
+   "key": "eth",
+   "name": "Ethereum",
+   "source": "domain.chainId",
+   "label": "FACT"
+  },
+  "domain": {
+   "chainId": "1",
+   "verifyingContract": "0x0000000000000000000000000000000000000011"
+  },
+  "hashes": {
+   "domain_separator": "0x0000000000000000000000000000000000000000000000000000000000000015",
+   "struct_hash": "0x0000000000000000000000000000000000000000000000000000000000000018",
+   "digest": "0x0000000000000000000000000000000000000000000000000000000000000019",
+   "primary_type_encoding": "SafeTx(address to,uint256 value,bytes data,uint8 operation)",
+   "label": "FACT",
+   "note": "computed offline from the payload (EIP-712). Compare the digest with what your wallet shows - if they differ, the wallet signs something else."
+  },
+  "input": {
+   "format": "typed_data_json",
+   "method": null,
+   "signer_hint": null,
+   "signature_present": false
+  },
+  "grants": [
+   {
+    "kind": "safe_call",
+    "pattern": "safe_tx",
+    "who": "0x6666666666666666666666666666666666666666",
+    "text": "The Safe 0x0000000000000000000000000000000000000011 would call 0x6666666666666666666666666666666666666666 with 0 wei (function 0xdeadbeef UNKNOWN offline - paste to/data into 'Simulate transaction' to decode).",
+    "label": "FACT",
+    "until": {
+     "kind": "none"
+    },
+    "safe_call": {
+     "safe": "0x0000000000000000000000000000000000000011",
+     "to": "0x6666666666666666666666666666666666666666",
+     "operation": 0,
+     "value_wei": "0",
+     "selector": "0xdeadbeef",
+     "function": null,
+     "args": []
+    },
+    "summary_en": "The Safe 0x0000000000000000000000000000000000000011 would call 0x6666666666666666666666666666666666666666 with 0 wei (function 0xdeadbeef UNKNOWN offline - paste to/data into 'Simulate transaction' to decode)."
+   }
+  ],
+  "risk": {
+   "level": "info",
+   "markers": [],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [
+   "SafeTx calldata selector 0xdeadbeef not decodable offline"
+  ],
+  "notes": [],
+  "unknown_codes": [
+   {
+    "id": "safe_selector",
+    "params": {
+     "selector": "0xdeadbeef"
+    }
+   }
+  ],
+  "note_codes": []
+ },
+ "safe_plain": {
+  "pattern": {
+   "id": "safe_tx",
+   "name": "Safe{Wallet} transaction (SafeTx) - executes a call from the multisig",
+   "label": "INFERENCE"
+  },
+  "chain": {
+   "chain_id": 1,
+   "key": "eth",
+   "name": "Ethereum",
+   "source": "domain.chainId",
+   "label": "FACT"
+  },
+  "domain": {
+   "chainId": "1"
+  },
+  "hashes": {
+   "domain_separator": "0x0000000000000000000000000000000000000000000000000000000000000020",
+   "struct_hash": "0x0000000000000000000000000000000000000000000000000000000000000021",
+   "digest": "0x0000000000000000000000000000000000000000000000000000000000000022",
+   "primary_type_encoding": "SafeTx(address to,uint256 value,bytes data,uint8 operation)",
+   "label": "FACT",
+   "note": "computed offline from the payload (EIP-712). Compare the digest with what your wallet shows - if they differ, the wallet signs something else."
+  },
+  "input": {
+   "format": "typed_data_json",
+   "method": null,
+   "signer_hint": null,
+   "signature_present": false
+  },
+  "grants": [
+   {
+    "kind": "safe_call",
+    "pattern": "safe_tx",
+    "who": "0x6666666666666666666666666666666666666666",
+    "text": "The Safe UNKNOWN would call 0x6666666666666666666666666666666666666666 with 1000000000000000000 wei.",
+    "label": "FACT",
+    "until": {
+     "kind": "none"
+    },
+    "safe_call": {
+     "safe": null,
+     "to": "0x6666666666666666666666666666666666666666",
+     "operation": 0,
+     "value_wei": "1000000000000000000",
+     "selector": null,
+     "function": null,
+     "args": []
+    },
+    "summary_en": "The Safe UNKNOWN would call 0x6666666666666666666666666666666666666666 with 1000000000000000000 wei."
+   }
+  ],
+  "risk": {
+   "level": "medium",
+   "markers": [
+    {
+     "id": "no_verifying_contract",
+     "severity": "medium",
+     "label": "FACT",
+     "text": "domain has no verifyingContract - the signature is not bound to one contract"
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [],
+  "notes": [],
+  "unknown_codes": [],
+  "note_codes": []
+ },
+ "seaport_mixed": {
+  "pattern": {
+   "id": "seaport_order",
+   "name": "Seaport 1.6 order (marketplace listing / offer)",
+   "label": "INFERENCE"
+  },
+  "chain": {
+   "chain_id": 1,
+   "key": "eth",
+   "name": "Ethereum",
+   "source": "domain.chainId",
+   "label": "FACT"
+  },
+  "domain": {
+   "name": "Seaport",
+   "version": "1.6",
+   "chainId": "1",
+   "verifyingContract": "0x0000000000000068F116a894984e2DB1123eB395"
+  },
+  "hashes": {
+   "domain_separator": "0x0000000000000000000000000000000000000000000000000000000000000023",
+   "struct_hash": "0x0000000000000000000000000000000000000000000000000000000000000024",
+   "digest": "0x0000000000000000000000000000000000000000000000000000000000000025",
+   "primary_type_encoding": "OrderComponents(address offerer,OfferItem[] offer,ConsiderationItem[] consideration,uint256 endTime)ConsiderationItem(uint8 itemType,address token,uint256 identifierOrCriteria,uint256 startAmount,uint256 endAmount,address recipient)OfferItem(uint8 itemType,address token,uint256 identifierOrCriteria,uint256 startAmount,uint256 endAmount)",
+   "label": "FACT",
+   "note": "computed offline from the payload (EIP-712). Compare the digest with what your wallet shows - if they differ, the wallet signs something else."
+  },
+  "input": {
+   "format": "typed_data_json",
+   "method": null,
+   "signer_hint": null,
+   "signature_present": false
+  },
+  "grants": [
+   {
+    "kind": "order_give",
+    "pattern": "seaport_order",
+    "item": "NFT (ERC-721) #1 of token 0x0000000000000000000000000000000000000012",
+    "item_info": {
+     "item_type": 2,
+     "token": "0x0000000000000000000000000000000000000012",
+     "token_symbol": null,
+     "amount": null,
+     "amount_raw": "1",
+     "identifier": "1"
+    },
+    "token": "0x0000000000000000000000000000000000000012",
+    "label": "FACT",
+    "until": {
+     "raw": "1792522800",
+     "utc": "2026-10-20T19:00:00Z",
+     "in_days": 1.0,
+     "kind": "date"
+    },
+    "until_field": "endTime",
+    "summary_en": "In this order you give NFT (ERC-721) #1 of token 0x0000000000000000000000000000000000000012, until 2026-10-20T19:00:00Z."
+   },
+   {
+    "kind": "order_give",
+    "pattern": "seaport_order",
+    "item": "NFT (ERC-721, any id matching criteria) of token 0x0000000000000000000000000000000000000013 (criteria 12345678901234567890… - may match ANY item)",
+    "item_info": {
+     "item_type": 4,
+     "token": "0x0000000000000000000000000000000000000013",
+     "token_symbol": null,
+     "amount": null,
+     "amount_raw": "1",
+     "identifier": "12345678901234567890123456789"
+    },
+    "token": "0x0000000000000000000000000000000000000013",
+    "label": "FACT",
+    "until": {
+     "raw": "1792522800",
+     "utc": "2026-10-20T19:00:00Z",
+     "in_days": 1.0,
+     "kind": "date"
+    },
+    "until_field": "endTime",
+    "summary_en": "In this order you give NFT (ERC-721, any id matching criteria) of token 0x0000000000000000000000000000000000000013 (criteria 12345678901234567890… - may match ANY item), until 2026-10-20T19:00:00Z."
+   },
+   {
+    "kind": "order_give",
+    "pattern": "seaport_order",
+    "item": "ERC-1155 #9 of token 0x0000000000000000000000000000000000000014 × 3",
+    "item_info": {
+     "item_type": 3,
+     "token": "0x0000000000000000000000000000000000000014",
+     "token_symbol": null,
+     "amount": null,
+     "amount_raw": "3",
+     "identifier": "9"
+    },
+    "token": "0x0000000000000000000000000000000000000014",
+    "label": "FACT",
+    "until": {
+     "raw": "1792522800",
+     "utc": "2026-10-20T19:00:00Z",
+     "in_days": 1.0,
+     "kind": "date"
+    },
+    "until_field": "endTime",
+    "summary_en": "In this order you give ERC-1155 #9 of token 0x0000000000000000000000000000000000000014 × 3, until 2026-10-20T19:00:00Z."
+   },
+   {
+    "kind": "order_give",
+    "pattern": "seaport_order",
+    "item": "1.234567 XCOIN",
+    "item_info": {
+     "item_type": 1,
+     "token": "0x0000000000000000000000000000000000000001",
+     "token_symbol": "XCOIN",
+     "amount": "1.234567",
+     "amount_raw": "1234567",
+     "identifier": "0"
+    },
+    "token": "0x0000000000000000000000000000000000000001",
+    "label": "FACT",
+    "until": {
+     "raw": "1792522800",
+     "utc": "2026-10-20T19:00:00Z",
+     "in_days": 1.0,
+     "kind": "date"
+    },
+    "until_field": "endTime",
+    "summary_en": "In this order you give 1.234567 XCOIN, until 2026-10-20T19:00:00Z."
+   },
+   {
+    "kind": "order_get",
+    "pattern": "seaport_order",
+    "item": "1.5 native coin (start amount)",
+    "item_info": {
+     "item_type": 0,
+     "token": "0x0000000000000000000000000000000000000000",
+     "token_symbol": null,
+     "amount": "1.5",
+     "amount_raw": "1500000000000000000",
+     "identifier": "0"
+    },
+    "token": "0x0000000000000000000000000000000000000000",
+    "recipient": "0x0000000000000000000000000000000000000004",
+    "recipient_role": "you (offerer)",
+    "recipient_is_offerer": true,
+    "label": "FACT",
+    "summary_en": "In return you (offerer) receives 1.5 native coin (start amount)."
+   },
+   {
+    "kind": "order_get",
+    "pattern": "seaport_order",
+    "item": "42 raw units (decimals UNKNOWN) token 0x0000000000000000000000000000000000000015",
+    "item_info": {
+     "item_type": 1,
+     "token": "0x0000000000000000000000000000000000000015",
+     "token_symbol": null,
+     "amount": null,
+     "amount_raw": "42",
+     "identifier": "0"
+    },
+    "token": "0x0000000000000000000000000000000000000015",
+    "recipient": "0x0000000000000000000000000000000000000016",
+    "recipient_role": "0x0000000000000000000000000000000000000016",
+    "recipient_is_offerer": false,
+    "label": "FACT",
+    "summary_en": "In return 0x0000000000000000000000000000000000000016 receives 42 raw units (decimals UNKNOWN) token 0x0000000000000000000000000000000000000015."
+   }
+  ],
+  "risk": {
+   "level": "info",
+   "markers": [],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [],
+  "notes": [],
+  "unknown_codes": [],
+  "note_codes": []
+ },
+ "permit_claimed_raw": {
+  "pattern": {
+   "id": "erc2612_permit",
+   "name": "ERC-2612 Permit - gasless approve(): the spender can submit it and then move your tokens",
+   "label": "INFERENCE"
+  },
+  "chain": {
+   "chain_id": 8453,
+   "key": "base",
+   "name": "Base",
+   "source": "domain.chainId",
+   "label": "FACT"
+  },
+  "domain": {
+   "name": "Example Shiny",
+   "version": "1",
+   "chainId": "8453",
+   "verifyingContract": "0x0000000000000000000000000000000000000017"
+  },
+  "hashes": {
+   "domain_separator": "0x0000000000000000000000000000000000000000000000000000000000000026",
+   "struct_hash": "0x0000000000000000000000000000000000000000000000000000000000000027",
+   "digest": "0x0000000000000000000000000000000000000000000000000000000000000028",
+   "primary_type_encoding": "Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)",
+   "label": "FACT",
+   "note": "computed offline from the payload (EIP-712). Compare the digest with what your wallet shows - if they differ, the wallet signs something else."
+  },
+  "input": {
+   "format": "typed_data_json",
+   "method": null,
+   "signer_hint": null,
+   "signature_present": false
+  },
+  "grants": [
+   {
+    "kind": "allowance",
+    "pattern": "erc2612_permit",
+    "who": "0x0000000000000000000000000000000000000018",
+    "who_role": "spender",
+    "owner": "0x0000000000000000000000000000000000000004",
+    "token": "0x0000000000000000000000000000000000000017",
+    "token_symbol": null,
+    "claimed_name": "Example Shiny",
+    "token_symbol_source": "domain.name - claimed by the payload, UNVERIFIED",
+    "amount_raw": "5000",
+    "amount": null,
+    "decimals": null,
+    "unlimited": false,
+    "unlimited_kind": null,
+    "until": {
+     "raw": "0",
+     "utc": "1970-01-01T00:00:00Z",
+     "in_days": null,
+     "kind": "expired"
+    },
+    "until_field": "deadline (signature + allowance can be used until)",
+    "nonce": "0",
+    "label": "FACT",
+    "summary_en": "You allow 0x0000000000000000000000000000000000000018 to take 5000 raw units (decimals UNKNOWN) of “Example Shiny” (name claimed by the payload) at 0x0000000000000000000000000000000000000017 from your wallet until 1970-01-01T00:00:00Z (ALREADY EXPIRED)."
+   }
+  ],
+  "risk": {
+   "level": "medium",
+   "markers": [
+    {
+     "id": "expired",
+     "severity": "medium",
+     "label": "FACT",
+     "text": "deadline (signature + allowance can be used until) already passed (1970-01-01T00:00:00Z): a correct contract should reject it now, but a legitimate dApp would not ask you to sign an expired permission - treat the site as suspicious"
+    },
+    {
+     "id": "grants_token_permission",
+     "severity": "medium",
+     "label": "FACT",
+     "text": "this signature gives a third party power over your tokens WITHOUT a transaction - gasless permits are the most common drainer technique. Sign only on the dApp you came for, and only if you expect to spend exactly this."
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [],
+  "notes": [],
+  "unknown_codes": [],
+  "note_codes": []
+ },
+ "permit_unknown_chain_unlimited_forever": {
+  "pattern": {
+   "id": "erc2612_permit",
+   "name": "ERC-2612 Permit - gasless approve(): the spender can submit it and then move your tokens",
+   "label": "INFERENCE"
+  },
+  "chain": {
+   "chain_id": 999,
+   "key": null,
+   "name": "chain id 999",
+   "source": "domain.chainId",
+   "label": "FACT"
+  },
+  "domain": {
+   "name": "X",
+   "chainId": "999",
+   "verifyingContract": "0x0000000000000000000000000000000000000019"
+  },
+  "hashes": {
+   "domain_separator": "0x0000000000000000000000000000000000000000000000000000000000000029",
+   "struct_hash": "0x0000000000000000000000000000000000000000000000000000000000000030",
+   "digest": "0x0000000000000000000000000000000000000000000000000000000000000031",
+   "primary_type_encoding": "Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)",
+   "label": "FACT",
+   "note": "computed offline from the payload (EIP-712). Compare the digest with what your wallet shows - if they differ, the wallet signs something else."
+  },
+  "input": {
+   "format": "typed_data_json",
+   "method": null,
+   "signer_hint": null,
+   "signature_present": false
+  },
+  "grants": [
+   {
+    "kind": "allowance",
+    "pattern": "erc2612_permit",
+    "who": "0x0000000000000000000000000000000000000018",
+    "who_role": "spender",
+    "owner": "0x0000000000000000000000000000000000000004",
+    "token": "0x0000000000000000000000000000000000000019",
+    "token_symbol": null,
+    "claimed_name": "X",
+    "token_symbol_source": "domain.name - claimed by the payload, UNVERIFIED",
+    "amount_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+    "amount": null,
+    "decimals": null,
+    "unlimited": true,
+    "unlimited_kind": "max_uint256",
+    "until": {
+     "raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+     "utc": null,
+     "in_days": null,
+     "kind": "never"
+    },
+    "until_field": "deadline (signature + allowance can be used until)",
+    "nonce": "0",
+    "label": "FACT",
+    "summary_en": "You allow 0x0000000000000000000000000000000000000018 to take UNLIMITED “X” (name claimed by the payload) at 0x0000000000000000000000000000000000000019 from your wallet with no expiry (forever)."
+   }
+  ],
+  "risk": {
+   "level": "critical",
+   "markers": [
+    {
+     "id": "unlimited",
+     "severity": "critical",
+     "label": "FACT",
+     "text": "UNLIMITED ERC-2612 permit: amount is max uint256 - the spender could take everything of this token you hold now or later and the permission never expires."
+    },
+    {
+     "id": "forever_deadline",
+     "severity": "high",
+     "label": "FACT",
+     "text": "deadline (signature + allowance can be used until) never expires (0 / max value / beyond year 9999)"
+    },
+    {
+     "id": "grants_token_permission",
+     "severity": "medium",
+     "label": "FACT",
+     "text": "this signature gives a third party power over your tokens WITHOUT a transaction - gasless permits are the most common drainer technique. Sign only on the dApp you came for, and only if you expect to spend exactly this."
+    },
+    {
+     "id": "unsupported_chain",
+     "severity": "info",
+     "label": "FACT",
+     "text": "chain id 999 is not covered by the Videre engine - address flags UNKNOWN"
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [],
+  "notes": [],
+  "unknown_codes": [],
+  "note_codes": []
+ },
+ "dai_revoke": {
+  "pattern": {
+   "id": "dai_permit",
+   "name": "DAI-style permit (allowed = true means unlimited)",
+   "label": "INFERENCE"
+  },
+  "chain": {
+   "chain_id": 1,
+   "key": "eth",
+   "name": "Ethereum",
+   "source": "domain.chainId",
+   "label": "FACT"
+  },
+  "domain": {
+   "name": "Example Dollar B",
+   "version": "1",
+   "chainId": "1",
+   "verifyingContract": "0x0000000000000000000000000000000000000020"
+  },
+  "hashes": {
+   "domain_separator": "0x0000000000000000000000000000000000000000000000000000000000000032",
+   "struct_hash": "0x0000000000000000000000000000000000000000000000000000000000000033",
+   "digest": "0x0000000000000000000000000000000000000000000000000000000000000034",
+   "primary_type_encoding": "Permit(address holder,address spender,uint256 nonce,uint256 expiry,bool allowed)",
+   "label": "FACT",
+   "note": "computed offline from the payload (EIP-712). Compare the digest with what your wallet shows - if they differ, the wallet signs something else."
+  },
+  "input": {
+   "format": "typed_data_json",
+   "method": null,
+   "signer_hint": null,
+   "signature_present": false
+  },
+  "grants": [
+   {
+    "kind": "allowance",
+    "pattern": "dai_permit",
+    "who": "0x0000000000000000000000000000000000000018",
+    "who_role": "spender",
+    "owner": "0x0000000000000000000000000000000000000004",
+    "token": "0x0000000000000000000000000000000000000020",
+    "token_symbol": "XUSDB",
+    "claimed_name": null,
+    "token_symbol_source": "built-in token table (FACT for this contract)",
+    "amount_raw": null,
+    "amount": null,
+    "decimals": 18,
+    "unlimited": false,
+    "unlimited_kind": null,
+    "revoked": true,
+    "until": {
+     "raw": "0",
+     "utc": null,
+     "in_days": null,
+     "kind": "never"
+    },
+    "until_field": "expiry",
+    "nonce": "0",
+    "label": "FACT",
+    "summary_en": "You REVOKE 0x0000000000000000000000000000000000000018's permission to spend XUSDB."
+   }
+  ],
+  "risk": {
+   "level": "high",
+   "markers": [
+    {
+     "id": "forever_deadline",
+     "severity": "high",
+     "label": "FACT",
+     "text": "expiry never expires (0 / max value / beyond year 9999)"
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [],
+  "notes": [],
+  "unknown_codes": [],
+  "note_codes": []
+ },
+ "dai_unlimited": {
+  "pattern": {
+   "id": "dai_permit",
+   "name": "DAI-style permit (allowed = true means unlimited)",
+   "label": "INFERENCE"
+  },
+  "chain": {
+   "chain_id": 1,
+   "key": "eth",
+   "name": "Ethereum",
+   "source": "domain.chainId",
+   "label": "FACT"
+  },
+  "domain": {
+   "name": "Example Dollar B",
+   "version": "1",
+   "chainId": "1",
+   "verifyingContract": "0x0000000000000000000000000000000000000020"
+  },
+  "hashes": {
+   "domain_separator": "0x0000000000000000000000000000000000000000000000000000000000000032",
+   "struct_hash": "0x0000000000000000000000000000000000000000000000000000000000000035",
+   "digest": "0x0000000000000000000000000000000000000000000000000000000000000036",
+   "primary_type_encoding": "Permit(address holder,address spender,uint256 nonce,uint256 expiry,bool allowed)",
+   "label": "FACT",
+   "note": "computed offline from the payload (EIP-712). Compare the digest with what your wallet shows - if they differ, the wallet signs something else."
+  },
+  "input": {
+   "format": "typed_data_json",
+   "method": null,
+   "signer_hint": null,
+   "signature_present": false
+  },
+  "grants": [
+   {
+    "kind": "allowance",
+    "pattern": "dai_permit",
+    "who": "0x0000000000000000000000000000000000000018",
+    "who_role": "spender",
+    "owner": "0x0000000000000000000000000000000000000004",
+    "token": "0x0000000000000000000000000000000000000020",
+    "token_symbol": "XUSDB",
+    "claimed_name": null,
+    "token_symbol_source": "built-in token table (FACT for this contract)",
+    "amount_raw": null,
+    "amount": null,
+    "decimals": 18,
+    "unlimited": true,
+    "unlimited_kind": "bool_allowed",
+    "revoked": false,
+    "until": {
+     "raw": "0",
+     "utc": null,
+     "in_days": null,
+     "kind": "never"
+    },
+    "until_field": "expiry",
+    "nonce": "0",
+    "label": "FACT",
+    "summary_en": "You allow 0x0000000000000000000000000000000000000018 to take UNLIMITED XUSDB from your wallet with no expiry (forever)."
+   }
+  ],
+  "risk": {
+   "level": "critical",
+   "markers": [
+    {
+     "id": "unlimited",
+     "severity": "critical",
+     "label": "FACT",
+     "text": "UNLIMITED DAI-style permit: amount is allowed=true (no amount cap) - the spender could take everything of this token you hold now or later and the permission never expires."
+    },
+    {
+     "id": "forever_deadline",
+     "severity": "high",
+     "label": "FACT",
+     "text": "expiry never expires (0 / max value / beyond year 9999)"
+    },
+    {
+     "id": "grants_token_permission",
+     "severity": "medium",
+     "label": "FACT",
+     "text": "this signature gives a third party power over your tokens WITHOUT a transaction - gasless permits are the most common drainer technique. Sign only on the dApp you came for, and only if you expect to spend exactly this."
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [],
+  "notes": [],
+  "unknown_codes": [],
+  "note_codes": []
+ },
+ "approval_for_all_revoke": {
+  "pattern": {
+   "id": "approval_for_all",
+   "name": "setApprovalForAll-style approval in typed data (shape match: operator + approved)",
+   "label": "INFERENCE"
+  },
+  "chain": {
+   "chain_id": 1,
+   "key": "eth",
+   "name": "Ethereum",
+   "source": "domain.chainId",
+   "label": "FACT"
+  },
+  "domain": {
+   "name": "NFT",
+   "chainId": "1"
+  },
+  "hashes": {
+   "domain_separator": "0x0000000000000000000000000000000000000000000000000000000000000037",
+   "struct_hash": "0x0000000000000000000000000000000000000000000000000000000000000038",
+   "digest": "0x0000000000000000000000000000000000000000000000000000000000000039",
+   "primary_type_encoding": "ApprovalForAll(address owner,address operator,bool approved)",
+   "label": "FACT",
+   "note": "computed offline from the payload (EIP-712). Compare the digest with what your wallet shows - if they differ, the wallet signs something else."
+  },
+  "input": {
+   "format": "typed_data_json",
+   "method": null,
+   "signer_hint": null,
+   "signature_present": false
+  },
+  "grants": [
+   {
+    "kind": "operator_all",
+    "pattern": "approval_for_all",
+    "who": "0x0000000000000000000000000000000000000018",
+    "who_role": "operator",
+    "owner": "0x0000000000000000000000000000000000000004",
+    "token": null,
+    "approved": false,
+    "unlimited": false,
+    "unlimited_kind": null,
+    "until": {
+     "kind": "none"
+    },
+    "until_field": "deadline",
+    "label": "INFERENCE",
+    "summary_en": "You REVOKE 0x0000000000000000000000000000000000000018's permission over collection UNKNOWN."
+   }
+  ],
+  "risk": {
+   "level": "medium",
+   "markers": [
+    {
+     "id": "no_verifying_contract",
+     "severity": "medium",
+     "label": "FACT",
+     "text": "domain has no verifyingContract - the signature is not bound to one contract"
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [],
+  "notes": [],
+  "unknown_codes": [],
+  "note_codes": []
+ },
+ "permit2_immediate_noncanonical": {
+  "pattern": {
+   "id": "permit2_single",
+   "name": "Permit2 AllowanceTransfer (PermitSingle) - sets a reusable allowance inside Permit2",
+   "label": "INFERENCE"
+  },
+  "chain": {
+   "chain_id": 1,
+   "key": "eth",
+   "name": "Ethereum",
+   "source": "domain.chainId",
+   "label": "FACT"
+  },
+  "domain": {
+   "name": "Permit2",
+   "chainId": "1",
+   "verifyingContract": "0x0000000000000000000000000000000000000021"
+  },
+  "hashes": {
+   "domain_separator": "0x0000000000000000000000000000000000000000000000000000000000000040",
+   "struct_hash": "0x0000000000000000000000000000000000000000000000000000000000000041",
+   "digest": "0x0000000000000000000000000000000000000000000000000000000000000042",
+   "primary_type_encoding": "PermitSingle(PermitDetails details,address spender,uint256 sigDeadline)PermitDetails(address token,uint160 amount,uint48 expiration,uint48 nonce)",
+   "label": "FACT",
+   "note": "computed offline from the payload (EIP-712). Compare the digest with what your wallet shows - if they differ, the wallet signs something else."
+  },
+  "input": {
+   "format": "typed_data_json",
+   "method": null,
+   "signer_hint": null,
+   "signature_present": false
+  },
+  "grants": [
+   {
+    "kind": "allowance",
+    "pattern": "permit2_allowance",
+    "who": "0x0000000000000000000000000000000000000018",
+    "who_role": "spender",
+    "token": "0x0000000000000000000000000000000000000022",
+    "token_symbol": null,
+    "token_symbol_source": null,
+    "amount_raw": "10",
+    "amount": null,
+    "decimals": null,
+    "unlimited": false,
+    "unlimited_kind": null,
+    "until": {
+     "raw": "0",
+     "utc": null,
+     "in_days": null,
+     "kind": "immediate"
+    },
+    "until_field": "details.expiration (allowance)",
+    "sig_deadline": {
+     "raw": "1792522800",
+     "utc": "2026-10-20T19:00:00Z",
+     "in_days": 1.0,
+     "kind": "date"
+    },
+    "nonce": "0",
+    "via": "Permit2",
+    "label": "FACT",
+    "summary_en": "You allow 0x0000000000000000000000000000000000000018 to take 10 raw units (decimals UNKNOWN) of token 0x0000000000000000000000000000000000000022 from your wallet for the same block only."
+   }
+  ],
+  "risk": {
+   "level": "high",
+   "markers": [
+    {
+     "id": "permit2_non_canonical",
+     "severity": "high",
+     "label": "FACT",
+     "text": "Permit2-shaped request but verifyingContract is 0x0000000000000000000000000000000000000021, not the canonical Permit2 0x0000000000000000000000000000000000000006 - a look-alike contract could treat this signature differently"
+    },
+    {
+     "id": "grants_token_permission",
+     "severity": "medium",
+     "label": "FACT",
+     "text": "this signature gives a third party power over your tokens WITHOUT a transaction - gasless permits are the most common drainer technique. Sign only on the dApp you came for, and only if you expect to spend exactly this."
+    },
+    {
+     "id": "immediate_expiry",
+     "severity": "info",
+     "label": "FACT",
+     "text": "allowance expiration is 0: Permit2 treats this as 'expires in the same block'"
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [],
+  "notes": [],
+  "unknown_codes": [],
+  "note_codes": []
+ },
+ "personal_sign_text": {
+  "pattern": {
+   "id": "text_message",
+   "name": "personal_sign plain-text message",
+   "label": "INFERENCE"
+  },
+  "chain": {
+   "chain_id": null,
+   "key": null,
+   "name": "UNKNOWN",
+   "source": "none",
+   "label": "UNKNOWN"
+  },
+  "domain": null,
+  "hashes": null,
+  "input": {
+   "format": "rpc_request",
+   "method": "personal_sign",
+   "signer_hint": "0x0000000000000000000000000000000000000004",
+   "signature_present": false
+  },
+  "grants": [
+   {
+    "kind": "login",
+    "pattern": "text_message",
+    "text": "You sign a plain-text message (shown below). Text alone does not approve or move tokens, but it can log you in or prove you own the address.",
+    "label": "INFERENCE",
+    "until": {
+     "kind": "none"
+    },
+    "summary_en": "You sign a plain-text message (shown below). Text alone does not approve or move tokens, but it can log you in or prove you own the address."
+   }
+  ],
+  "risk": {
+   "level": "medium",
+   "markers": [
+    {
+     "id": "suspicious_text",
+     "severity": "medium",
+     "label": "INFERENCE",
+     "text": "the message text mentions approvals / transfers / claims / secrets - text cannot move tokens by itself, so a site asking for this may be preparing something else (read it carefully)"
+    },
+    {
+     "id": "text_message",
+     "severity": "info",
+     "label": "FACT",
+     "text": "plain-text personal_sign message"
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [],
+  "notes": [],
+  "unknown_codes": [],
+  "note_codes": []
+ },
+ "personal_sign_hash": {
+  "pattern": {
+   "id": "opaque_message",
+   "name": "personal_sign over opaque bytes",
+   "label": "UNKNOWN"
+  },
+  "chain": {
+   "chain_id": null,
+   "key": null,
+   "name": "UNKNOWN",
+   "source": "none",
+   "label": "UNKNOWN"
+  },
+  "domain": null,
+  "hashes": null,
+  "input": {
+   "format": "rpc_request",
+   "method": "personal_sign",
+   "signer_hint": "0x0000000000000000000000000000000000000004",
+   "signature_present": false
+  },
+  "grants": [
+   {
+    "kind": "opaque",
+    "pattern": "opaque_message",
+    "label": "UNKNOWN",
+    "until": {
+     "kind": "unknown"
+    },
+    "byte_len": 32,
+    "method": "personal_sign",
+    "text": "personal_sign over 32 non-text bytes - what it authorizes is UNKNOWN (opaque).",
+    "summary_en": "personal_sign over 32 non-text bytes - what it authorizes is UNKNOWN (opaque)."
+   }
+  ],
+  "risk": {
+   "level": "high",
+   "markers": [
+    {
+     "id": "blind_hash",
+     "severity": "high",
+     "label": "FACT",
+     "text": "the message is exactly 32 bytes - a hash. Signing a hash with personal_sign is blind signing (e.g. bulk-listing / off-chain order hashes): what it authorizes is UNKNOWN"
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [
+   "message bytes are not text: meaning UNKNOWN"
+  ],
+  "notes": [],
+  "unknown_codes": [
+   {
+    "id": "opaque_bytes",
+    "params": {}
+   }
+  ],
+  "note_codes": []
+ },
+ "hex_bytes_no_method": {
+  "pattern": {
+   "id": "opaque_message",
+   "name": "personal_sign / eth_sign (method UNKNOWN) over opaque bytes",
+   "label": "UNKNOWN"
+  },
+  "chain": {
+   "chain_id": null,
+   "key": null,
+   "name": "UNKNOWN",
+   "source": "none",
+   "label": "UNKNOWN"
+  },
+  "domain": null,
+  "hashes": null,
+  "input": {
+   "format": "hex",
+   "method": null,
+   "signer_hint": null,
+   "signature_present": false
+  },
+  "grants": [
+   {
+    "kind": "opaque",
+    "pattern": "opaque_message",
+    "label": "UNKNOWN",
+    "until": {
+     "kind": "unknown"
+    },
+    "byte_len": 40,
+    "method": null,
+    "text": "message signature over 40 non-text bytes - what it authorizes is UNKNOWN (opaque).",
+    "summary_en": "message signature over 40 non-text bytes - what it authorizes is UNKNOWN (opaque)."
+   }
+  ],
+  "risk": {
+   "level": "high",
+   "markers": [
+    {
+     "id": "opaque_bytes",
+     "severity": "high",
+     "label": "FACT",
+     "text": "the message is 40 bytes of binary data, not text - its meaning is UNKNOWN"
+    },
+    {
+     "id": "method_unknown",
+     "severity": "medium",
+     "label": "UNKNOWN",
+     "text": "bare hex without the RPC method: could be personal_sign or eth_sign - treated as opaque"
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [
+   "message bytes are not text: meaning UNKNOWN"
+  ],
+  "notes": [],
+  "unknown_codes": [
+   {
+    "id": "opaque_bytes",
+    "params": {}
+   }
+  ],
+  "note_codes": []
+ },
+ "legacy_v1": {
+  "pattern": {
+   "id": "legacy_typed_data",
+   "name": "eth_signTypedData v1 (legacy)",
+   "label": "UNKNOWN"
+  },
+  "chain": {
+   "chain_id": null,
+   "key": null,
+   "name": "UNKNOWN",
+   "source": "none",
+   "label": "UNKNOWN"
+  },
+  "domain": null,
+  "hashes": null,
+  "input": {
+   "format": "rpc_request",
+   "method": "eth_signTypedData",
+   "signer_hint": "0x0000000000000000000000000000000000000004",
+   "signature_present": false
+  },
+  "grants": [
+   {
+    "kind": "generic",
+    "pattern": "legacy_typed_data",
+    "label": "UNKNOWN",
+    "until": {
+     "kind": "unknown"
+    },
+    "text": "Legacy typed data (v1): a list of named values - effect UNKNOWN, fields listed below.",
+    "summary_en": "Legacy typed data (v1): a list of named values - effect UNKNOWN, fields listed below."
+   }
+  ],
+  "risk": {
+   "level": "medium",
+   "markers": [
+    {
+     "id": "legacy_typed_data",
+     "severity": "medium",
+     "label": "FACT",
+     "text": "legacy eth_signTypedData v1: no domain / chain binding - the signature may be replayable elsewhere"
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [
+   "legacy v1 typed data: effect UNKNOWN"
+  ],
+  "notes": [],
+  "unknown_codes": [
+   {
+    "id": "legacy_effect",
+    "params": {}
+   }
+  ],
+  "note_codes": []
+ },
+ "invalid_typed": {
+  "pattern": {
+   "id": "invalid_typed_data",
+   "name": "EIP-712 typed data that does not validate",
+   "label": "UNKNOWN"
+  },
+  "chain": {
+   "chain_id": null,
+   "key": null,
+   "name": "UNKNOWN",
+   "source": "none",
+   "label": "UNKNOWN"
+  },
+  "domain": null,
+  "hashes": null,
+  "input": {
+   "format": "typed_data_json",
+   "method": null,
+   "signer_hint": null,
+   "signature_present": false
+  },
+  "grants": [
+   {
+    "kind": "generic",
+    "pattern": "invalid_typed_data",
+    "label": "UNKNOWN",
+    "until": {
+     "kind": "unknown"
+    },
+    "text": "The typed data does not validate, so what it authorizes is UNKNOWN.",
+    "summary_en": "The typed data does not validate, so what it authorizes is UNKNOWN."
+   }
+  ],
+  "risk": {
+   "level": "high",
+   "markers": [
+    {
+     "id": "invalid_typed_data",
+     "severity": "high",
+     "label": "FACT",
+     "text": "the typed data is malformed (type Permit.x: unknown type 'nonsense') - a wallet should refuse it; a site sending broken typed data is a red flag"
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [
+   "typed data did not validate: decode UNKNOWN"
+  ],
+  "notes": [],
+  "unknown_codes": [
+   {
+    "id": "invalid_typed_data",
+    "params": {}
+   }
+  ],
+  "note_codes": []
+ },
+ "no_domain_type_signature_present": {
+  "pattern": {
+   "id": "erc2612_permit",
+   "name": "ERC-2612 Permit - gasless approve(): the spender can submit it and then move your tokens",
+   "label": "INFERENCE"
+  },
+  "chain": {
+   "chain_id": 1,
+   "key": "eth",
+   "name": "Ethereum",
+   "source": "domain.chainId",
+   "label": "FACT"
+  },
+  "domain": {
+   "name": "Example Coin",
+   "version": "2",
+   "chainId": "1",
+   "verifyingContract": "0x0000000000000000000000000000000000000001"
+  },
+  "hashes": {
+   "domain_separator": "0x0000000000000000000000000000000000000000000000000000000000000043",
+   "struct_hash": "0x0000000000000000000000000000000000000000000000000000000000000044",
+   "digest": "0x0000000000000000000000000000000000000000000000000000000000000045",
+   "primary_type_encoding": "Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)",
+   "label": "FACT",
+   "note": "computed offline from the payload (EIP-712). Compare the digest with what your wallet shows - if they differ, the wallet signs something else."
+  },
+  "input": {
+   "format": "typed_data_json",
+   "method": null,
+   "signer_hint": null,
+   "signature_present": true
+  },
+  "grants": [
+   {
+    "kind": "allowance",
+    "pattern": "erc2612_permit",
+    "who": "0x0000000000000000000000000000000000000018",
+    "who_role": "spender",
+    "owner": "0x0000000000000000000000000000000000000004",
+    "token": "0x0000000000000000000000000000000000000001",
+    "token_symbol": "XCOIN",
+    "claimed_name": null,
+    "token_symbol_source": "built-in token table (FACT for this contract)",
+    "amount_raw": "1",
+    "amount": "0.000001",
+    "decimals": 6,
+    "unlimited": false,
+    "unlimited_kind": null,
+    "until": {
+     "raw": "1792522800",
+     "utc": "2026-10-20T19:00:00Z",
+     "in_days": 1.0,
+     "kind": "date"
+    },
+    "until_field": "deadline (signature + allowance can be used until)",
+    "nonce": "0",
+    "label": "FACT",
+    "summary_en": "You allow 0x0000000000000000000000000000000000000018 to take 0.000001 XCOIN from your wallet until 2026-10-20T19:00:00Z."
+   }
+  ],
+  "risk": {
+   "level": "medium",
+   "markers": [
+    {
+     "id": "grants_token_permission",
+     "severity": "medium",
+     "label": "FACT",
+     "text": "this signature gives a third party power over your tokens WITHOUT a transaction - gasless permits are the most common drainer technique. Sign only on the dApp you came for, and only if you expect to spend exactly this."
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "unknowns": [],
+  "notes": [
+   "types.EIP712Domain was missing; inferred from the domain keys (name, version, chainId, verifyingContract, salt)",
+   "the paste also contains a signature - this request may already have been signed. We do not verify or use it. If you signed a permit / approval, revoke it (for Permit2: invalidate the nonce / lockdown)."
+  ],
+  "unknown_codes": [],
+  "note_codes": [
+   {
+    "id": "domain_type_inferred",
+    "params": {}
+   },
+   {
+    "id": "signature_present",
+    "params": {}
+   }
+  ]
+ }
+}

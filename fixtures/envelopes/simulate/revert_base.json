@@ -1,0 +1,177 @@
+{
+ "status": "ok",
+ "engine_version": "1.0.0",
+ "wrapper_version": "0.4.0",
+ "requested_at_utc": "2026-10-19T18:43:06Z",
+ "finished_at_utc": "2026-10-19T18:43:19Z",
+ "chain": "base",
+ "chain_requested": "base",
+ "address": "0x0000000000000000000000000000000000000004",
+ "cached": false,
+ "cache_age_sec": null,
+ "kind": "simulate",
+ "stage": "A",
+ "disclaimer": "Simulation shows what this transaction would do against the CURRENT on-chain state of the forked block. The contract may behave differently later (upgradeable code, owner switches, time / price / balance conditions, a different sender or block). Heuristics, not proof. No flags is not a clearance. Not investment advice.",
+ "result": {
+  "kind": "simulate",
+  "stage": "A",
+  "sim_version": "0.1.0",
+  "chain": "base",
+  "chain_id": 8453,
+  "chain_name": "Base",
+  "native_symbol": "ETH",
+  "generated_at": "2026-10-19T18:43:14Z",
+  "duration_sec": 8,
+  "input": {
+   "mode": "call",
+   "from": "0x0000000000000000000000000000000000000004",
+   "to": "0x0000000000000000000000000000000000000105",
+   "value_wei": "1000",
+   "data_bytes": 0,
+   "selector": null,
+   "tx_hash": null,
+   "raw_tx_hash": null,
+   "source": "as entered",
+   "original_block": null,
+   "block_mode": null
+  },
+  "fork": {
+   "rpc_host": "mainnet.base.org",
+   "rpc_failed_before": [
+    "base-rpc.publicnode.com: fork failed (receipt unavailable (Fork Error: Transport(HttpError(HttpErr)"
+   ],
+   "block_number": 52823022,
+   "block_time_utc": "2026-10-19T18:43:11Z",
+   "label": "FACT",
+   "gas_price_simulated": "0 (fees excluded from balance changes)"
+  },
+  "decoded": {
+   "selector": null,
+   "signature": null,
+   "label": "FACT",
+   "source": null,
+   "args": [],
+   "note": "no calldata: plain native-coin transfer"
+  },
+  "execution": {
+   "status": "reverted",
+   "label": "FACT",
+   "revert_reason": "custom error 0x1b10b0f9",
+   "gas_used": 20000
+  },
+  "native_changes": [
+   {
+    "address": "0x0000000000000000000000000000000000000004",
+    "before_wei": "10000000000000000",
+    "after_wei": "10000000000000000",
+    "delta_wei": "-1000000000",
+    "delta": "0",
+    "sign": "-",
+    "label": "FACT"
+   }
+  ],
+  "token_transfers": [],
+  "approvals": [],
+  "contracts_called": [
+   {
+    "address": "0x0000000000000000000000000000000000000105",
+    "call_types": [
+     "CALL"
+    ],
+    "min_depth": 0,
+    "calls": 1,
+    "reverted_calls": 1,
+    "selectors": [],
+    "label": "FACT",
+    "has_code": true
+   }
+  ],
+  "tokens": {},
+  "unknowns": [],
+  "disclaimer": "Simulation shows what this transaction would do against the CURRENT on-chain state of the forked block. The contract may behave differently later (upgradeable code, owner switches, time / price / balance conditions, a different sender or block). Heuristics, not proof. No flags is not a clearance. Not investment advice.",
+  "explorer": {
+   "base": "https://basescan.org"
+  },
+  "addresses": [
+   {
+    "address": "0x0000000000000000000000000000000000000105",
+    "roles": [
+     "called contract",
+     "contract called"
+    ],
+    "kind": "wallet",
+    "check": {
+     "status": "ok",
+     "engine_kind": "wallet",
+     "generated_at": "2026-10-19T18:43:19Z",
+     "counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "info": 0
+     },
+     "flags_total": 0,
+     "flags": [],
+     "unknown_sources": [],
+     "unknown_count": 0,
+     "verdict_kind": null,
+     "verdict_label": null,
+     "report_path": null,
+     "label_guess": {
+      "address": "0x0000000000000000000000000000000000000105",
+      "kind": "contract",
+      "label": "ExampleRouterV5",
+      "label_source": "Blockscout tags/name (INFERENCE)",
+      "is_contract": true,
+      "tx_count": 0
+     },
+     "cached": false
+    }
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000004",
+    "roles": [
+     "sender (you)"
+    ],
+    "kind": "wallet",
+    "check": {
+     "status": "ok",
+     "engine_kind": "wallet",
+     "generated_at": "2026-10-19T18:43:17Z",
+     "counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "info": 1
+     },
+     "flags_total": 1,
+     "flags": [
+      {
+       "severity": "info",
+       "flag": "funded from cex (INFERENCE)",
+       "evidence": "Exchange C 14",
+       "source": "explorer trace",
+       "label": "INFERENCE",
+       "confidence": null
+      }
+     ],
+     "unknown_sources": [],
+     "unknown_count": 0,
+     "verdict_kind": null,
+     "verdict_label": null,
+     "report_path": null,
+     "label_guess": {
+      "address": "0x0000000000000000000000000000000000000004",
+      "kind": "cex",
+      "label": "Exchange C 14",
+      "label_source": "Videre seed list (INFERENCE)",
+      "is_contract": null,
+      "tx_count": null
+     },
+     "cached": false
+    }
+   }
+  ]
+ },
+ "error": null
+}

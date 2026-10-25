@@ -1,0 +1,138 @@
+{
+ "status": "ok",
+ "engine_version": "1.0.0",
+ "wrapper_version": "0.4.0",
+ "requested_at_utc": "2026-10-19T19:57:29Z",
+ "finished_at_utc": "2026-10-19T19:57:29Z",
+ "chain": {
+  "chain_id": null,
+  "key": null,
+  "name": "UNKNOWN",
+  "source": "none",
+  "label": "UNKNOWN"
+ },
+ "chain_requested": "auto",
+ "address": null,
+ "cached": false,
+ "cache_age_sec": null,
+ "kind": "signature",
+ "stage": "B",
+ "disclaimer": "This is a decode of what the signature request would authorize. It does not prove the signature is valid, that the site will use it as shown, or that the contract will behave the same later. Read-only: nothing is signed, no wallet is connected, nothing is sent on-chain. Heuristics, not proof; no flags ≠ safe.",
+ "result": {
+  "kind": "signature",
+  "stage": "B",
+  "payload_type": "personal_sign",
+  "input": {
+   "format": "rpc_request",
+   "method": "personal_sign",
+   "signer_hint": "0x0000000000000000000000000000000000000004",
+   "signature_present": false
+  },
+  "pattern": {
+   "id": "siwe",
+   "name": "Sign-In with Ethereum (EIP-4361) login message",
+   "label": "INFERENCE"
+  },
+  "decode": {
+   "label": "FACT",
+   "error": null
+  },
+  "chain": {
+   "chain_id": null,
+   "key": null,
+   "name": "UNKNOWN",
+   "source": "none",
+   "label": "UNKNOWN"
+  },
+  "domain": null,
+  "hashes": null,
+  "grants": [
+   {
+    "kind": "login",
+    "pattern": "text_message",
+    "text": "Sign-In with Ethereum: you log in to app.example.org as 0x0000000000000000000000000000000000000004. Check that this domain matches the site in your address bar.",
+    "label": "INFERENCE",
+    "until": {
+     "kind": "none"
+    },
+    "siwe": {
+     "domain": "app.example.org",
+     "address": "0x0000000000000000000000000000000000000004",
+     "uri": "https://app.example.org",
+     "version": "1",
+     "chain_id": "1",
+     "nonce": "8f3a9b2c",
+     "issued_at": "2026-10-19T18:00:00Z",
+     "expiration_time": "2026-10-19T18:10:00Z"
+    },
+    "summary_en": "Sign-In with Ethereum: you log in to app.example.org as 0x0000000000000000000000000000000000000004. Check that this domain matches the site in your address bar."
+   }
+  ],
+  "risk": {
+   "level": "medium",
+   "markers": [
+    {
+     "id": "expired",
+     "severity": "medium",
+     "label": "FACT",
+     "text": "login message expired at 2026-10-19T18:10:00Z"
+    },
+    {
+     "id": "siwe",
+     "severity": "info",
+     "label": "FACT",
+     "text": "login message for app.example.org - a different domain than the site you are on means phishing"
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "fields": [
+   {
+    "path": "data",
+    "type": "bytes",
+    "value": "0x6170702e6578616d706c6500000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000050000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000700000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000009"
+   },
+   {
+    "path": "text (UTF-8)",
+    "type": "string",
+    "value": "app.example.org wants you to sign in with your Ethereum account:\n0x0000000000000000000000000000000000000004\n\nSign in to Example.\n\nURI: https://app.example.org\nVersion: 1\nChain ID: 1\nNonce: 8f3a9b2c\nIssued At: 2026-10-19T18:00:00Z\nExpiration Time: 2026-10-19T18:10:00Z"
+   }
+  ],
+  "fields_truncated": false,
+  "unknowns": [
+   "Videre flags UNKNOWN for 1 of 1 addresses (see each row)"
+  ],
+  "notes": [],
+  "unknown_codes": [
+   {
+    "id": "flags_unchecked",
+    "params": {
+     "n": "1",
+     "total": "1"
+    }
+   }
+  ],
+  "note_codes": [],
+  "disclaimer": "This is a decode of what the signature request would authorize. It does not prove the signature is valid, that the site will use it as shown, or that the contract will behave the same later. Read-only: nothing is signed, no wallet is connected, nothing is sent on-chain. Heuristics, not proof; no flags ≠ safe.",
+  "disclaimer_code": "sig_decode",
+  "generated_at": "2026-10-19T19:57:29Z",
+  "addresses": [
+   {
+    "address": "0x0000000000000000000000000000000000000004",
+    "roles": [
+     "SIWE account",
+     "signer (from the request)"
+    ],
+    "kind": "wallet",
+    "check": {
+     "status": "unknown",
+     "reason": "network UNKNOWN (the payload has no chainId) - pick a network and decode again",
+     "flags": [],
+     "counts": null
+    }
+   }
+  ]
+ },
+ "error": null
+}

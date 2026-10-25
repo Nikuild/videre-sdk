@@ -1,0 +1,131 @@
+{
+ "status": "ok",
+ "engine_version": "1.0.0",
+ "wrapper_version": "0.4.0",
+ "requested_at_utc": "2026-10-21T08:13:57Z",
+ "finished_at_utc": "2026-10-21T08:14:00Z",
+ "chain": "solana",
+ "chain_requested": "auto",
+ "address": "Fake111111111111111111111111111111111111127",
+ "cached": false,
+ "cache_age_sec": null,
+ "kind": "wallet",
+ "result": {
+  "kind": "wallet",
+  "input": "Fake111111111111111111111111111111111111127",
+  "chain": "solana",
+  "generated_at": "2026-10-21T08:13:59Z",
+  "tool": null,
+  "summary": "no_flags_incomplete",
+  "flags": [
+   {
+    "severity": "info",
+    "code": "funded_from_cex",
+    "source": "explorer trace",
+    "label": "INFERENCE",
+    "params": {
+     "hop": 2
+    }
+   }
+  ],
+  "balances": {
+   "status": "OK",
+   "label": "FACT",
+   "fetched_at": "2026-10-21T08:13:58Z",
+   "rows": [
+    {
+     "chain": "solana",
+     "status": "OK",
+     "native": "SOL",
+     "balance": 0,
+     "sent_txs": null,
+     "recent_signatures": 20,
+     "last_activity": "2026-10-04T09:56:40Z",
+     "is_contract": null
+    }
+   ]
+  },
+  "goplus": {
+   "status": "FAIL",
+   "label": "UNKNOWN",
+   "flags": [],
+   "fetched_at": "2026-10-21T08:13:59Z",
+   "data_source": null
+  },
+  "funding": {
+   "status": "OK",
+   "fetched_at": "2026-10-21T08:13:59Z",
+   "hops": [
+    {
+     "hop": 1,
+     "status": "OK",
+     "to": "Fake111111111111111111111111111111111111127",
+     "from": "Fake111111111111111111111111111111111111185",
+     "time": "2025-07-10T21:18:46Z",
+     "amount": 0,
+     "unit": "SOL",
+     "tx_link": "https://solscan.io/tx/h6rVK5Lzm6bFCCGwWdAHd1A31gwXhSKs1QKz9jnwCaVhYk1wB5Ste3bxXVRFnwxV91C1v13h2VgJcUmHWzXCsLw",
+     "from_kind": "eoa",
+     "from_label": null,
+     "kind_label": "INFERENCE",
+     "reason_code": null
+    },
+    {
+     "hop": 2,
+     "status": "OK",
+     "to": "Fake111111111111111111111111111111111111185",
+     "from": "Fake1111111111111111111111111111111111111186",
+     "time": "2025-06-17T09:02:43Z",
+     "amount": 0.5,
+     "unit": "SOL",
+     "tx_link": "https://solscan.io/tx/465Kxv9YKixq39qRu8qnEdj9EEPHuvByorRLsZCmF8vFGLrtPEXivg71D73Tsee7jLhvRceKyy9wAjkhVuRYrsBk",
+     "from_kind": "cex",
+     "from_label": "Exchange A (Solana)",
+     "kind_label": "INFERENCE",
+     "reason_code": null
+    }
+   ]
+  },
+  "address_label": {
+   "status": "OK",
+   "kind": "eoa",
+   "text": null,
+   "label": "INFERENCE"
+  },
+  "detected": {
+   "kind": "wallet",
+   "basis": "sol_system_owned",
+   "chain": "solana",
+   "label": "FACT"
+  },
+  "unknown": [
+   "goplus_address"
+  ],
+  "links": {
+   "explorer": "https://solscan.io/account/Fake111111111111111111111111111111111111127"
+  },
+  "sections": {
+   "balances": {
+    "source": "solana-rpc",
+    "status": "OK",
+    "fetched_at": "2026-10-21T08:13:58Z"
+   },
+   "label": {
+    "source": "labels",
+    "status": "OK",
+    "fetched_at": "2026-10-21T08:13:58Z"
+   },
+   "goplus_address": {
+    "source": "goplus",
+    "status": "FAIL",
+    "fetched_at": "2026-10-21T08:13:59Z"
+   },
+   "funding": {
+    "source": "explorer trace",
+    "status": "OK",
+    "fetched_at": "2026-10-21T08:13:59Z"
+   }
+  }
+ },
+ "error": null
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@videre/sdk",
+  "version": "0.1.0",
+  "description": "Videre SDK: report types, FACT/INFERENCE view models, input validation, i18n (11 locales) and small React UI primitives for the Videre public API. Heuristics, not proof. No flags ≠ safe. Not investment advice.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "LICENSE", "NOTICE", "README.md"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "peerDependencies": { "react": ">=19" },
+  "peerDependenciesMeta": { "react": { "optional": true } },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tsc-alias": "1.8.16",
+    "typescript": "6.0.3",
+    "vitest": "4.1.12"
+  },
+  "engines": { "node": ">=20.9" }
+}

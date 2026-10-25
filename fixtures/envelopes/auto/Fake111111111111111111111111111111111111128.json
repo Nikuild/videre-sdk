@@ -1,0 +1,638 @@
+{
+ "status": "ok",
+ "engine_version": "1.0.0",
+ "wrapper_version": "0.1.0",
+ "requested_at_utc": "2026-10-19T14:43:10Z",
+ "finished_at_utc": "2026-10-19T14:43:14Z",
+ "chain": "solana",
+ "chain_requested": "auto",
+ "address": "Fake111111111111111111111111111111111111128",
+ "cached": false,
+ "cache_age_sec": null,
+ "result": {
+  "kind": "token",
+  "input": "Fake111111111111111111111111111111111111128",
+  "chain": "solana",
+  "chain_detection": "address format -> solana",
+  "generated_at": "2026-10-19T14:43:14Z",
+  "tool": "videre-engine 1.0.0",
+  "sections": {
+   "identity": {
+    "source": "dexscreener",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:43:11Z",
+    "cached": false,
+    "data": {
+     "name": "Example Sol Token",
+     "symbol": "XSOL",
+     "pair_count": 1,
+     "oldest_pair_created": "2024-01-31T04:35:25Z",
+     "oldest_pair_age_days": 1000,
+     "newest_pair_age_days": 1000,
+     "liquidity_usd_total": 700000,
+     "fdv_usd": 2000000000,
+     "mcap_usd": 1000000000,
+     "volume_24h_usd": 1000000,
+     "txns_24h": {
+      "buys": 5000,
+      "sells": 5000
+     },
+     "top_pairs": [
+      {
+       "pair": "Fake1111111111111111111111111111111111111129",
+       "dex": "orca",
+       "quote": "SOL",
+       "liquidity_usd": 700000,
+       "created": "2024-01-31T04:35:25Z",
+       "labels": [
+        "wp"
+       ]
+      }
+     ],
+     "pair_addresses": [
+      "Fake1111111111111111111111111111111111111129"
+     ],
+     "websites": [
+      "https://examplesol.test"
+     ],
+     "socials": [
+      "https://example.com/social Sol TokenExchange",
+      "https://example.com/social"
+     ],
+     "boosts_active": 0,
+     "unit": "USD",
+     "note": "liquidity = sum over DexScreener pairs; FDV/mcap are quotes, not depth"
+    },
+    "error": null
+   },
+   "rugcheck": {
+    "source": "rugcheck",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:43:12Z",
+    "cached": false,
+    "data": {
+     "name": "Example Sol Token",
+     "symbol": "XSOL",
+     "mint_authority": null,
+     "freeze_authority": null,
+     "metadata_mutable": true,
+     "update_authority": "Fake1111111111111111111111111111111111111131",
+     "creator": null,
+     "creator_balance_raw": 0,
+     "token_supply_raw": 7000000000000000,
+     "decimals": 6,
+     "risks": [
+      {
+       "name": "Mutable metadata",
+       "level": "warn",
+       "value": ""
+      }
+     ],
+     "score_normalised": 1,
+     "rugged": false,
+     "total_holders": 3000000,
+     "total_market_liquidity_usd": 5000000,
+     "transfer_fee": {
+      "pct": 0,
+      "maxAmount": 0,
+      "authority": "10000000000000000000000000000000"
+     },
+     "top_holders": [
+      {
+       "owner": "Fake1111111111111111111111111111111111111132",
+       "token_account": "Fake1111111111111111111111111111111111111133",
+       "pct": 20,
+       "insider": false,
+       "known": null,
+       "known_type": null
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111131",
+       "token_account": "Fake1111111111111111111111111111111111111134",
+       "pct": 20,
+       "insider": false,
+       "known": null,
+       "known_type": null
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111135",
+       "token_account": "Fake1111111111111111111111111111111111111136",
+       "pct": 3,
+       "insider": false,
+       "known": null,
+       "known_type": null
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111137",
+       "token_account": "Fake1111111111111111111111111111111111111138",
+       "pct": 3,
+       "insider": false,
+       "known": null,
+       "known_type": null
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111139",
+       "token_account": "Fake111111111111111111111111111111111111141",
+       "pct": 3,
+       "insider": false,
+       "known": null,
+       "known_type": null
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111142",
+       "token_account": "Fake1111111111111111111111111111111111111143",
+       "pct": 2,
+       "insider": false,
+       "known": null,
+       "known_type": null
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111144",
+       "token_account": "Fake1111111111111111111111111111111111111145",
+       "pct": 2,
+       "insider": false,
+       "known": null,
+       "known_type": null
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111146",
+       "token_account": "Fake1111111111111111111111111111111111111147",
+       "pct": 2,
+       "insider": false,
+       "known": null,
+       "known_type": null
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111148",
+       "token_account": "Fake1111111111111111111111111111111111111149",
+       "pct": 1,
+       "insider": false,
+       "known": "Example Locker",
+       "known_type": "LOCKER"
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111151",
+       "token_account": "Fake1111111111111111111111111111111111111152",
+       "pct": 1,
+       "insider": false,
+       "known": null,
+       "known_type": null
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111153",
+       "token_account": "Fake1111111111111111111111111111111111111154",
+       "pct": 1,
+       "insider": false,
+       "known": null,
+       "known_type": null
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111155",
+       "token_account": "Fake1111111111111111111111111111111111111156",
+       "pct": 0.5,
+       "insider": false,
+       "known": null,
+       "known_type": null
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111157",
+       "token_account": "Fake1111111111111111111111111111111111111158",
+       "pct": 0.5,
+       "insider": false,
+       "known": null,
+       "known_type": null
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111159",
+       "token_account": "Fake1111111111111111111111111111111111111161",
+       "pct": 0.5,
+       "insider": false,
+       "known": null,
+       "known_type": null
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111162",
+       "token_account": "Fake1111111111111111111111111111111111111163",
+       "pct": 0.5,
+       "insider": false,
+       "known": null,
+       "known_type": null
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111164",
+       "token_account": "Fake111111111111111111111111111111111111165",
+       "pct": 0.5,
+       "insider": false,
+       "known": null,
+       "known_type": null
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111166",
+       "token_account": "Fake1111111111111111111111111111111111111167",
+       "pct": 0.5,
+       "insider": false,
+       "known": null,
+       "known_type": null
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111168",
+       "token_account": "Fake1111111111111111111111111111111111111169",
+       "pct": 0.5,
+       "insider": false,
+       "known": null,
+       "known_type": null
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111171",
+       "token_account": "Fake1111111111111111111111111111111111111172",
+       "pct": 0.5,
+       "insider": false,
+       "known": "Example Locker",
+       "known_type": "LOCKER"
+      },
+      {
+       "owner": "Fake1111111111111111111111111111111111111173",
+       "token_account": "Fake1111111111111111111111111111111111111174",
+       "pct": 0.5,
+       "insider": false,
+       "known": "Example Locker",
+       "known_type": "LOCKER"
+      }
+     ],
+     "markets": [
+      {
+       "type": "meteoraDlmm",
+       "pubkey": "Fake1111111111111111111111111111111111111175",
+       "lp_locked_pct": 0,
+       "lp_mint": "10000000000000000000000000000000",
+       "liq_usd": 2000000
+      },
+      {
+       "type": "orca",
+       "pubkey": "Fake1111111111111111111111111111111111111129",
+       "lp_locked_pct": 0,
+       "lp_mint": "10000000000000000000000000000000",
+       "liq_usd": 700000
+      },
+      {
+       "type": "meteoraDlmm",
+       "pubkey": "Fake1111111111111111111111111111111111111176",
+       "lp_locked_pct": 0,
+       "lp_mint": "10000000000000000000000000000000",
+       "liq_usd": 500000
+      },
+      {
+       "type": "meteoraDlmm",
+       "pubkey": "Fake1111111111111111111111111111111111111177",
+       "lp_locked_pct": 0,
+       "lp_mint": "10000000000000000000000000000000",
+       "liq_usd": 300000
+      },
+      {
+       "type": "meteoraDlmm",
+       "pubkey": "Fake1111111111111111111111111111111111111178",
+       "lp_locked_pct": 0,
+       "lp_mint": "10000000000000000000000000000000",
+       "liq_usd": 200000
+      },
+      {
+       "type": "meteoraDlmm",
+       "pubkey": "Fake1111111111111111111111111111111111111179",
+       "lp_locked_pct": 0,
+       "lp_mint": "10000000000000000000000000000000",
+       "liq_usd": 200000
+      },
+      {
+       "type": "meteoraDlmm",
+       "pubkey": "Fake1111111111111111111111111111111111111181",
+       "lp_locked_pct": 0,
+       "lp_mint": "10000000000000000000000000000000",
+       "liq_usd": 200000
+      },
+      {
+       "type": "meteoraDlmm",
+       "pubkey": "Fake1111111111111111111111111111111111111182",
+       "lp_locked_pct": 0,
+       "lp_mint": "10000000000000000000000000000000",
+       "liq_usd": 200000
+      }
+     ],
+     "insider_networks": [],
+     "graph_insiders_detected": 0,
+     "jup_verified": true,
+     "jup_strict": true,
+     "launchpad": null,
+     "deploy_platform": "unknown",
+     "known_accounts": {
+      "125z3mardKSpWYiouqKoQw8hDuZeay6Dn6xFS6t1DTvc": "AMM",
+      "12apFT8hMgZyjgLmAHM6btAtZt4iMgPgUe4oVGPZibcY": "AMM",
+      "12mFQfKgHknzDZTNPPGxpLcWRYh9hjUpYC1hPiWdvFwz": "AMM",
+      "12x1895WWffmEuqXcNJTUhaqevsduM4BAk9kjL5uYYXu": "AMM",
+      "142A4AZmUDaa2Q6ZirR4FTGyppeEaFpLvrW7YYUdm2mh": "AMM",
+      "14L6sMSXqwf1Z1sdshpzpMmUzTprAgjoELntbdD1PoZL": "AMM",
+      "14cHoapb6pbyb37R1LH1ThHzcmPxea9GCdaKBNDvBMEn": "AMM",
+      "1ntvCzbL1Qmcov315i9R32tfWWVkE6YQcMV5kic9EYN": "AMM",
+      "1obk6YJcXRN9eqoeuty3wypACicguxqmoGjSc5HubwE": "AMM",
+      "21F65qyX68ij7u35V1y5D9xMdZfmLQuxvfzyY6S2dSQ7": "AMM",
+      "21GQKpvUBMMe5FYEHBJvLYxnxaeDSHTbmWoCuWKMVb18": "AMM",
+      "21MiWyFANM2CcgbEmDDrrJdDaR4GSMZzg2zuvSDKXyg7": "AMM",
+      "21Rnp8em8kqCh3E8463TvCbcqQa3ehASDyo9HJv1TMwa": "AMM",
+      "21j8kMvChSSXbxWiu4u1qFeZB4uTWkbTHJCmgrRCEdTE": "AMM",
+      "2231yus317cDsrhyjqiq2HRPq7ZnTMVxSFBRVAhwF1RT": "AMM",
+      "22QuHk7kk1FE1xjizVMP3MqGtKXcviFrQPPyZACgWYso": "AMM",
+      "22nssrrJJBRDBsvnVjZfQEidAFmxpY2YNtJACU5g4qeN": "AMM",
+      "22ohDgQ8rrm8ZvisproxBQ35aV4Uw7YThafrNdnSKYLS": "AMM",
+      "235bDP8JzaWQX2txps7m7anaRyMvhAT4tpzun1korfCM": "AMM",
+      "23bUBuNvVXUGo9nfafUqw5FXVrvLEKy7w4wBEpYK4dcG": "AMM",
+      "23n1iw2wJxo2SXF3rpj6kEK4RqErL4ax5AcMofVNFyk5": "AMM",
+      "23zFjU1fS9QFH9jfjLqhMFfVKUF7UUH1gj57G6Y4MDyN": "AMM",
+      "24hHmHyTMDg331fK58jyiro4G3hm1NKJihfmzV4tDoJ7": "AMM",
+      "24rXDaZUvJJNAPGYD1hVFdTGzpUZJQXpCTdrE5SHaFJr": "AMM",
+      "25FeATf9hj5WeHNjXCxYu2LoJ8jLPTXk6KQceCKB5Vji": "AMM",
+      "25RhT7VfAoeSACdSBzaJ9prbQPJq9obkh7n8qYGJhsy1": "AMM",
+      "25RoyL5Dqzt9uiq1ARsicHCL5tbcHvo3m6af134168R2": "AMM",
+      "25Vgv4sRg111AnCp7zYpPW95LLsFM8PBvLryRrVErCPH": "AMM",
+      "25XDJL5k697UQjo5KSSNxSkA8b7XS4bMsbhfVYgBaiou": "AMM",
+      "26LsoRNP2vUY8hyeKXV86s5pghWpi4QwstsBnPDQJN56": "AMM",
+      "26SkF36hYWYfn2VEu8e4KPt7LVHWvdUY68vNB2XY2aJH": "AMM",
+      "26TvFVHpa9qPahQSRh24nF5mmK36p8SELEtLfoFihA3d": "AMM",
+      "26u5k8Nc1ziMhpp3atcZ96KmDDYVJZk6iQc4SfmxWssH": "AMM",
+      "26ugxwK9faW7urvCWQhG2bUQQmz1nDk3wDWMyBEf1XmZ": "AMM",
+      "27cnGYdQtiLCyyYbuRYQN5PosCB7J63X1vCvQivS6LjL": "AMM",
+      "27p75zqYXiAXqonQyxHyrtSfqb3f8JGJHX93RU4AWuyf": "AMM",
+      "286uVfdVP3qFQ1ULUbLMnkQquFg9UyjysAmCT4fymx37": "AMM",
+      "28oe25ZFTuHjuurxNUAULvKA6ahPX2omDuXzPPhknz7V": "AMM",
+      "28tXtLmzs7W3XX3AwNEgxTt3jXJAroTzYDVNnEJEykdT": "AMM",
+      "29WdLUoDHAkHQnHLqeXRzYSnLvVUNsYMX7aGL7W8GyWL": "AMM"
+     },
+     "note": "RugCheck heuristics, not proof"
+    },
+    "error": null
+   },
+   "goplus_sol": {
+    "source": "goplus-sol",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:43:12Z",
+    "cached": false,
+    "data": {
+     "mintable": "0",
+     "freezable": "0",
+     "closable": "0",
+     "balance_mutable_authority": "0",
+     "metadata_mutable": "1",
+     "transfer_fee_upgradable": "0",
+     "transfer_hook": [],
+     "default_account_state": "1",
+     "non_transferable": "0",
+     "trusted_token": 1,
+     "holder_count": "800000",
+     "creators": [],
+     "note": "'1' = flag true; GoPlus heuristics"
+    },
+    "error": null
+   },
+   "jupiter": {
+    "source": "jupiter",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:43:14Z",
+    "cached": false,
+    "data": {
+     "name": "Example Sol Token",
+     "symbol": "XSOL",
+     "isVerified": true,
+     "tags": [
+      "verified",
+      "defi",
+      "birdeye-trending",
+      "community",
+      "moonshot-verified",
+      "strict"
+     ],
+     "organicScore": 1,
+     "organicScoreLabel": "high",
+     "holderCount": 800000,
+     "mcap": 1000000000,
+     "fdv": 2000000000,
+     "liquidity": 5000000,
+     "createdAt": "2024-06-07T10:56:42.584Z",
+     "audit": {
+      "mintAuthorityDisabled": true,
+      "freezeAuthorityDisabled": true,
+      "topHoldersPercentage": 20,
+      "devMints": 1
+     },
+     "dev": "Fake111111111111111111111111111111111111183",
+     "firstPool": {
+      "id": "Fake1111111111111111111111111111111111111184",
+      "createdAt": "2024-01-29T17:33:29Z"
+     }
+    },
+    "error": null
+   },
+   "holders": {
+    "source": "rugcheck (derived)",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:43:12Z",
+    "data": {
+     "top1_pct_ex_lp_burn": 20,
+     "top10_pct_ex_lp_burn": 70,
+     "holder_count": 3000000,
+     "creator_pct": 0,
+     "owner_pct": null,
+     "top": [
+      {
+       "address": "Fake1111111111111111111111111111111111111132",
+       "pct": 20,
+       "insider": false,
+       "label": null
+      },
+      {
+       "address": "Fake1111111111111111111111111111111111111131",
+       "pct": 20,
+       "insider": false,
+       "label": null
+      },
+      {
+       "address": "Fake1111111111111111111111111111111111111135",
+       "pct": 3,
+       "insider": false,
+       "label": null
+      },
+      {
+       "address": "Fake1111111111111111111111111111111111111137",
+       "pct": 3,
+       "insider": false,
+       "label": null
+      },
+      {
+       "address": "Fake1111111111111111111111111111111111111139",
+       "pct": 3,
+       "insider": false,
+       "label": null
+      },
+      {
+       "address": "Fake1111111111111111111111111111111111111142",
+       "pct": 2,
+       "insider": false,
+       "label": null
+      },
+      {
+       "address": "Fake1111111111111111111111111111111111111144",
+       "pct": 2,
+       "insider": false,
+       "label": null
+      },
+      {
+       "address": "Fake1111111111111111111111111111111111111146",
+       "pct": 2,
+       "insider": false,
+       "label": null
+      },
+      {
+       "address": "Fake1111111111111111111111111111111111111148",
+       "pct": 1,
+       "insider": false,
+       "label": "Example Locker"
+      },
+      {
+       "address": "Fake1111111111111111111111111111111111111151",
+       "pct": 1,
+       "insider": false,
+       "label": null
+      }
+     ],
+     "excluded": [],
+     "insider_flagged_in_top": 0,
+     "note": "concentration computed by Videre from the source's top-holder list (CEX/lockers are NOT excluded; identity = INFERENCE)"
+    }
+   },
+   "liquidity": {
+    "source": "rugcheck (derived)",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:43:12Z",
+    "data": {
+     "lp_locked_or_burned_pct": null,
+     "measurable_markets": 0,
+     "markets": [
+      {
+       "type": "meteoraDlmm",
+       "pubkey": "Fake1111111111111111111111111111111111111175",
+       "lp_locked_pct": 0,
+       "lp_mint": "10000000000000000000000000000000",
+       "liq_usd": 2000000
+      },
+      {
+       "type": "orca",
+       "pubkey": "Fake1111111111111111111111111111111111111129",
+       "lp_locked_pct": 0,
+       "lp_mint": "10000000000000000000000000000000",
+       "liq_usd": 700000
+      },
+      {
+       "type": "meteoraDlmm",
+       "pubkey": "Fake1111111111111111111111111111111111111176",
+       "lp_locked_pct": 0,
+       "lp_mint": "10000000000000000000000000000000",
+       "liq_usd": 500000
+      },
+      {
+       "type": "meteoraDlmm",
+       "pubkey": "Fake1111111111111111111111111111111111111177",
+       "lp_locked_pct": 0,
+       "lp_mint": "10000000000000000000000000000000",
+       "liq_usd": 300000
+      },
+      {
+       "type": "meteoraDlmm",
+       "pubkey": "Fake1111111111111111111111111111111111111178",
+       "lp_locked_pct": 0,
+       "lp_mint": "10000000000000000000000000000000",
+       "liq_usd": 200000
+      },
+      {
+       "type": "meteoraDlmm",
+       "pubkey": "Fake1111111111111111111111111111111111111179",
+       "lp_locked_pct": 0,
+       "lp_mint": "10000000000000000000000000000000",
+       "liq_usd": 200000
+      }
+     ],
+     "note": "liquidity-weighted lpLockedPct over classic AMM markets; CLMM/DLMM positions are not LP tokens -> not measurable (UNKNOWN)"
+    }
+   },
+   "hype": {
+    "source": "dexscreener+geckoterminal",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:40:44Z",
+    "cached": true,
+    "data": {
+     "boosts_active_on_pairs": 0,
+     "paid_orders": [
+      {
+       "type": "tokenAd",
+       "status": "cancelled",
+       "paid_at": "2025-02-15T20:04:11Z"
+      }
+     ],
+     "in_dexscreener_top_boosts": false,
+     "in_geckoterminal_trending": false,
+     "note": "boosts/orders = paid promotion; trending = attention. Neither is quality"
+    },
+    "error": null
+   },
+   "dev_trace": {
+    "source": "explorer trace",
+    "status": "FAIL",
+    "fetched_at": "2026-10-19T14:43:14Z",
+    "cached": false,
+    "data": null,
+    "error": "RugCheck creator UNKNOWN"
+   }
+  },
+  "flags": [
+   {
+    "severity": "info",
+    "flag": "metadata mutable",
+    "evidence": "update authority Fake1111111111111111111111111111111111111131",
+    "source": "rugcheck"
+   },
+   {
+    "severity": "info",
+    "flag": "top-10 concentration",
+    "evidence": "70% of supply in top-10 (ex LP/burn; CEX/lockers not excluded)",
+    "source": "rugcheck (derived)"
+   },
+   {
+    "severity": "info",
+    "flag": "top-1 concentration",
+    "evidence": "20%",
+    "source": "rugcheck (derived)"
+   },
+   {
+    "severity": "info",
+    "flag": "paid DexScreener orders/profile",
+    "evidence": "tokenAd",
+    "source": "dexscreener"
+   }
+  ],
+  "verdict": {
+   "draft_verdict": "NO HARD FLAGS - ONLY WITH CAVEATS",
+   "why": "no critical/high flags from the sources that answered",
+   "established_token_heuristic": true,
+   "incomplete": false,
+   "counts": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "info": 4
+   },
+   "note": "DRAFT per desk-heuristics ladder. The analyst writes the final verdict. Heuristics, not proof. No flags ≠ safe. Not investment advice."
+  },
+  "unknown_sources": [
+   "dev_trace:explorer trace=FAIL"
+  ],
+  "explorer": "https://solscan.io/account/Fake111111111111111111111111111111111111128",
+  "disclaimer": "Heuristics, not proof. No flags ≠ safe. Not investment advice."
+ },
+ "error": null
+}

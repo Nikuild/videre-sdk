@@ -1,0 +1,20 @@
+{
+ "status": "unknown",
+ "engine_version": "1.0.0",
+ "wrapper_version": "0.4.0",
+ "requested_at_utc": "2026-10-19T18:50:00Z",
+ "finished_at_utc": "2026-10-19T18:50:12Z",
+ "chain": "bsc",
+ "chain_requested": "bsc",
+ "address": null,
+ "cached": false,
+ "cache_age_sec": null,
+ "kind": "simulate",
+ "stage": "A",
+ "disclaimer": "Simulation shows what this transaction would do against the CURRENT on-chain state of the forked block. The contract may behave differently later (upgradeable code, owner switches, time / price / balance conditions, a different sender or block). Heuristics, not proof. No flags is not a clearance. Not investment advice.",
+ "result": null,
+ "error": {
+  "code": "rpc_unavailable",
+  "message": "no public RPC answered for BNB Chain - simulation UNKNOWN (bsc-dataseed.bnbchain.org: RATE_LIMITED; bsc-rpc.publicnode.com: RATE_LIMITED)"
+ }
+}

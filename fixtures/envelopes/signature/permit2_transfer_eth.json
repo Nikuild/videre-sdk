@@ -1,0 +1,245 @@
+{
+ "status": "ok",
+ "engine_version": "1.0.0",
+ "wrapper_version": "0.4.0",
+ "requested_at_utc": "2026-10-19T19:57:29Z",
+ "finished_at_utc": "2026-10-19T19:57:29Z",
+ "chain": {
+  "chain_id": 1,
+  "key": "eth",
+  "name": "Ethereum",
+  "source": "domain.chainId",
+  "label": "FACT"
+ },
+ "chain_requested": "auto",
+ "address": null,
+ "cached": false,
+ "cache_age_sec": null,
+ "kind": "signature",
+ "stage": "B",
+ "disclaimer": "This is a decode of what the signature request would authorize. It does not prove the signature is valid, that the site will use it as shown, or that the contract will behave the same later. Read-only: nothing is signed, no wallet is connected, nothing is sent on-chain. Heuristics, not proof; no flags ≠ safe.",
+ "result": {
+  "kind": "signature",
+  "stage": "B",
+  "payload_type": "eip712",
+  "input": {
+   "format": "typed_data_json",
+   "method": null,
+   "signer_hint": null,
+   "signature_present": false
+  },
+  "pattern": {
+   "id": "permit2_transfer",
+   "name": "Permit2 SignatureTransfer (PermitTransferFrom) - one-time transfer, signature is single use",
+   "label": "INFERENCE"
+  },
+  "decode": {
+   "label": "FACT",
+   "error": null
+  },
+  "chain": {
+   "chain_id": 1,
+   "key": "eth",
+   "name": "Ethereum",
+   "source": "domain.chainId",
+   "label": "FACT"
+  },
+  "domain": {
+   "name": "Permit2",
+   "chainId": "1",
+   "verifyingContract": "0x0000000000000000000000000000000000000006"
+  },
+  "hashes": {
+   "domain_separator": "0x0000000000000000000000000000000000000000000000000000000000000059",
+   "struct_hash": "0x0000000000000000000000000000000000000000000000000000000000000060",
+   "digest": "0x0000000000000000000000000000000000000000000000000000000000000061",
+   "primary_type_encoding": "PermitTransferFrom(TokenPermissions permitted,address spender,uint256 nonce,uint256 deadline)TokenPermissions(address token,uint256 amount)",
+   "label": "FACT",
+   "note": "computed offline from the payload (EIP-712). Compare the digest with what your wallet shows - if they differ, the wallet signs something else."
+  },
+  "grants": [
+   {
+    "kind": "transfer",
+    "pattern": "permit2_transfer",
+    "who": "0x0000000000000000000000000000000000000008",
+    "who_role": "spender",
+    "token": "0x0000000000000000000000000000000000000001",
+    "token_symbol": "XCOIN",
+    "token_symbol_source": "built-in token table (FACT for this contract)",
+    "amount_raw": "50000000",
+    "amount": "50",
+    "decimals": 6,
+    "unlimited": false,
+    "unlimited_kind": null,
+    "until": {
+     "raw": "1792438200",
+     "utc": "2026-10-19T19:30:00Z",
+     "in_days": -0.0,
+     "kind": "expired"
+    },
+    "until_field": "deadline",
+    "nonce": "1234",
+    "via": "Permit2",
+    "label": "FACT",
+    "summary_en": "You let 0x0000000000000000000000000000000000000008 pull 50 XCOIN from your wallet once (one-time transfer), until 2026-10-19T19:30:00Z (ALREADY EXPIRED)."
+   }
+  ],
+  "risk": {
+   "level": "medium",
+   "markers": [
+    {
+     "id": "expired",
+     "severity": "medium",
+     "label": "FACT",
+     "text": "deadline already passed (2026-10-19T19:30:00Z): a correct contract should reject it now, but a legitimate dApp would not ask you to sign an expired permission - treat the site as suspicious"
+    },
+    {
+     "id": "grants_token_permission",
+     "severity": "medium",
+     "label": "FACT",
+     "text": "this signature gives a third party power over your tokens WITHOUT a transaction - gasless permits are the most common drainer technique. Sign only on the dApp you came for, and only if you expect to spend exactly this."
+    }
+   ],
+   "note_code": "level_is_max_marker",
+   "note": "Risk level = the most severe marker. No markers is NOT a clearance - it only means none of our checks fired."
+  },
+  "fields": [
+   {
+    "path": "permitted.token",
+    "type": "address",
+    "value": "0x0000000000000000000000000000000000000001"
+   },
+   {
+    "path": "permitted.amount",
+    "type": "uint256",
+    "value": "50000000"
+   },
+   {
+    "path": "spender",
+    "type": "address",
+    "value": "0x0000000000000000000000000000000000000008"
+   },
+   {
+    "path": "nonce",
+    "type": "uint256",
+    "value": "1234"
+   },
+   {
+    "path": "deadline",
+    "type": "uint256",
+    "value": "1792438200"
+   }
+  ],
+  "fields_truncated": false,
+  "unknowns": [],
+  "notes": [
+   "verifyingContract is the canonical Permit2 contract (FACT: built-in constant). Permit2 itself is a neutral router: what matters is the spender."
+  ],
+  "unknown_codes": [],
+  "note_codes": [
+   {
+    "id": "permit2_canonical",
+    "params": {}
+   }
+  ],
+  "disclaimer": "This is a decode of what the signature request would authorize. It does not prove the signature is valid, that the site will use it as shown, or that the contract will behave the same later. Read-only: nothing is signed, no wallet is connected, nothing is sent on-chain. Heuristics, not proof; no flags ≠ safe.",
+  "disclaimer_code": "sig_decode",
+  "generated_at": "2026-10-19T19:57:29Z",
+  "addresses": [
+   {
+    "address": "0x0000000000000000000000000000000000000008",
+    "roles": [
+     "spender"
+    ],
+    "kind": "wallet",
+    "check": {
+     "status": "ok",
+     "engine_kind": "wallet",
+     "generated_at": "2026-10-19T18:00:00Z",
+     "counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "info": 0
+     },
+     "flags_total": 0,
+     "flags": [],
+     "unknown_sources": [
+      "etherscan: rate limited (FIXTURE)"
+     ],
+     "unknown_count": 1,
+     "verdict_kind": null,
+     "verdict_label": null,
+     "report_path": null,
+     "label_guess": null,
+     "cached": false
+    }
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000001",
+    "roles": [
+     "token"
+    ],
+    "kind": "token",
+    "check": {
+     "status": "ok",
+     "engine_kind": "token",
+     "generated_at": "2026-10-19T18:00:00Z",
+     "counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 1,
+      "info": 0
+     },
+     "flags_total": 1,
+     "flags": [
+      {
+       "severity": "medium",
+       "flag": "owner can pause transfers",
+       "evidence": "is_pausable=1 (FIXTURE)",
+       "source": "goplus",
+       "label": "FACT",
+       "confidence": null
+      }
+     ],
+     "unknown_sources": [],
+     "unknown_count": 0,
+     "verdict_kind": "watch",
+     "verdict_label": "WATCH",
+     "report_path": "/r/eth/0x0000000000000000000000000000000000000001",
+     "cached": false
+    }
+   },
+   {
+    "address": "0x0000000000000000000000000000000000000006",
+    "roles": [
+     "Permit2 (canonical)"
+    ],
+    "kind": "wallet",
+    "check": {
+     "status": "ok",
+     "engine_kind": "wallet",
+     "generated_at": "2026-10-19T18:00:00Z",
+     "counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "info": 0
+     },
+     "flags_total": 0,
+     "flags": [],
+     "unknown_sources": [
+      "etherscan: rate limited (FIXTURE)"
+     ],
+     "unknown_count": 1,
+     "verdict_kind": null,
+     "verdict_label": null,
+     "report_path": null,
+     "label_guess": null,
+     "cached": false
+    }
+   }
+  ]
+ },
+ "error": null
+}

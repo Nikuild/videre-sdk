@@ -1,0 +1,398 @@
+{
+ "status": "ok",
+ "engine_version": "1.0.0",
+ "wrapper_version": "0.1.0",
+ "requested_at_utc": "2026-10-19T14:43:35Z",
+ "finished_at_utc": "2026-10-19T14:43:43Z",
+ "chain": "tron",
+ "chain_requested": "tron",
+ "address": "TFake11111111111111111111111111124",
+ "cached": false,
+ "cache_age_sec": null,
+ "result": {
+  "kind": "token",
+  "input": "TFake11111111111111111111111111124",
+  "chain": "tron",
+  "chain_detection": null,
+  "generated_at": "2026-10-19T14:43:43Z",
+  "tool": "videre-engine 1.0.0",
+  "sections": {
+   "identity": {
+    "source": "dexscreener",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:43:35Z",
+    "cached": false,
+    "data": {
+     "name": "Example Dollar",
+     "symbol": "XUSD",
+     "pair_count": 1,
+     "oldest_pair_created": "2021-12-14T10:02:42Z",
+     "oldest_pair_age_days": 2000,
+     "newest_pair_age_days": 2000,
+     "liquidity_usd_total": 5000000,
+     "fdv_usd": null,
+     "mcap_usd": null,
+     "volume_24h_usd": 1000,
+     "txns_24h": {
+      "buys": 1,
+      "sells": 7
+     },
+     "top_pairs": [
+      {
+       "pair": "TFake11111111111111111111111111112",
+       "dex": "sunswap",
+       "quote": "XUSD",
+       "liquidity_usd": 5000000,
+       "created": "2021-12-14T10:02:42Z",
+       "labels": null
+      }
+     ],
+     "pair_addresses": [
+      "TFake11111111111111111111111111112"
+     ],
+     "websites": [
+      "https://exampledex.test/#/home"
+     ],
+     "socials": [
+      "https://example.com/social",
+      "https://example.com/social"
+     ],
+     "boosts_active": 0,
+     "unit": "USD",
+     "note": "liquidity = sum over DexScreener pairs; FDV/mcap are quotes, not depth"
+    },
+    "error": null
+   },
+   "goplus": {
+    "source": "goplus",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:43:36Z",
+    "cached": false,
+    "data": {
+     "token_name": "Example Dollar",
+     "token_symbol": "XUSD",
+     "is_open_source": "1",
+     "is_proxy": "0",
+     "is_mintable": "1",
+     "owner_change_balance": "1",
+     "can_take_back_ownership": "0",
+     "hidden_owner": "0",
+     "selfdestruct": "0",
+     "external_call": "1",
+     "is_honeypot": "0",
+     "transfer_tax": "",
+     "cannot_buy": "0",
+     "transfer_pausable": "1",
+     "trading_cooldown": "0",
+     "is_blacklisted": "1",
+     "is_whitelisted": "0",
+     "slippage_modifiable": "0",
+     "personal_slippage_modifiable": "0",
+     "is_anti_whale": "0",
+     "anti_whale_modifiable": "0",
+     "holder_count": "70000000",
+     "total_supply": "90000000000",
+     "creator_address": "TFake11111111111111111111111111125",
+     "creator_percent": "0",
+     "creator_balance": "0",
+     "owner_percent": "0",
+     "owner_balance": "0",
+     "trust_list": "1",
+     "honeypot_with_same_creator": "0",
+     "holders": [
+      {
+       "address": "TFake11111111111111111111111111113",
+       "pct": 2,
+       "is_contract": 0,
+       "tag": "Example Treasury",
+       "is_locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111114",
+       "pct": 1,
+       "is_contract": 0,
+       "tag": "Exchange C-Hot 7",
+       "is_locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111115",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "is_locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111116",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "is_locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111117",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "is_locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111118",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "Bitfinex",
+       "is_locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111119",
+       "pct": 0,
+       "is_contract": 0,
+       "tag": "",
+       "is_locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111121",
+       "pct": 0,
+       "is_contract": 0,
+       "tag": "OKX Hot Wallet 8",
+       "is_locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111122",
+       "pct": 0,
+       "is_contract": 0,
+       "tag": "",
+       "is_locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111123",
+       "pct": 0,
+       "is_contract": 0,
+       "tag": "",
+       "is_locked": 0
+      }
+     ],
+     "lp_holders": [],
+     "dex": [],
+     "note_videre": "'1' = flag true, '0' = false, missing = UNKNOWN. pct fields converted to % by Videre"
+    },
+    "error": null
+   },
+   "holders": {
+    "source": "goplus (derived)",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:43:36Z",
+    "data": {
+     "top1_pct_ex_lp_burn": 2,
+     "top10_pct_ex_lp_burn": 5,
+     "holder_count": "70000000",
+     "creator_pct": 0,
+     "owner_pct": 0,
+     "top": [
+      {
+       "address": "TFake11111111111111111111111111113",
+       "pct": 2,
+       "is_contract": 0,
+       "tag": "Example Treasury",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111114",
+       "pct": 1,
+       "is_contract": 0,
+       "tag": "Exchange C-Hot 7",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111115",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111116",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111117",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111118",
+       "pct": 0.5,
+       "is_contract": 0,
+       "tag": "Bitfinex",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111119",
+       "pct": 0,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111121",
+       "pct": 0,
+       "is_contract": 0,
+       "tag": "OKX Hot Wallet 8",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111122",
+       "pct": 0,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      },
+      {
+       "address": "TFake11111111111111111111111111123",
+       "pct": 0,
+       "is_contract": 0,
+       "tag": "",
+       "locked": 0
+      }
+     ],
+     "excluded": [],
+     "note": "concentration computed by Videre from the source's top-holder list (CEX/lockers are NOT excluded; identity = INFERENCE)"
+    }
+   },
+   "liquidity": {
+    "source": "goplus (derived)",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:43:36Z",
+    "data": {
+     "lp_locked_or_burned_pct": null,
+     "note": "no LP-token holders reported -> UNKNOWN"
+    }
+   },
+   "hype": {
+    "source": "dexscreener+geckoterminal",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:40:44Z",
+    "cached": true,
+    "data": {
+     "boosts_active_on_pairs": 0,
+     "paid_orders": [],
+     "in_dexscreener_top_boosts": false,
+     "in_geckoterminal_trending": true,
+     "note": "boosts/orders = paid promotion; trending = attention. Neither is quality"
+    },
+    "error": null
+   },
+   "dev_trace": {
+    "source": "explorer trace",
+    "status": "OK",
+    "fetched_at": "2026-10-19T14:43:38Z",
+    "cached": false,
+    "data": {
+     "deployer": "TFake11111111111111111111111111125",
+     "deployer_source": "goplus.creator_address",
+     "deployer_link": "https://tronscan.org/#/address/TFake11111111111111111111111111125",
+     "hops": [
+      {
+       "hop": 1,
+       "to": "TFake11111111111111111111111111125",
+       "from": "TFake11111111111111111111111111118",
+       "tx": "3d7f44d8b52e3e31836e3e2614d58ff758143197ea3c768abdd1cb35b6f89d68",
+       "time": "2019-04-13T09:49:39Z",
+       "amount": 100,
+       "unit": "TRX",
+       "from_kind": "eoa",
+       "from_label": null,
+       "label_source": null,
+       "from_tx_count": null,
+       "provider": "trongrid",
+       "status": "OK",
+       "label_lookup_error": null,
+       "link": "https://tronscan.org/#/transaction/3d7f44d8b52e3e31836e3e2614d58ff758143197ea3c768abdd1cb35b6f89d68",
+       "note": null
+      },
+      {
+       "hop": 2,
+       "to": "TFake11111111111111111111111111118",
+       "from": "TFake11111111111111111111111111126",
+       "tx": "fe1dc693414f1bb7c0c4c27739d6086f8534369c80faaa105582a3bf4d979605",
+       "time": "2018-07-10T18:38:24Z",
+       "amount": 0,
+       "unit": "TRX",
+       "from_kind": "eoa",
+       "from_label": null,
+       "label_source": null,
+       "from_tx_count": null,
+       "provider": "trongrid",
+       "status": "OK",
+       "label_lookup_error": null,
+       "link": "https://tronscan.org/#/transaction/fe1dc693414f1bb7c0c4c27739d6086f8534369c80faaa105582a3bf4d979605",
+       "note": null
+      }
+     ],
+     "touches": [],
+     "note": "first-funder walk (earliest incoming value transfer), stop at CEX/mixer/bridge/contract. Labels = INFERENCE; funding link != identity; post-mixer linkage is UNKNOWN by design"
+    },
+    "error": null
+   }
+  },
+  "flags": [
+   {
+    "severity": "high",
+    "flag": "owner can change balances",
+    "evidence": "owner_change_balance=1",
+    "source": "goplus"
+   },
+   {
+    "severity": "medium",
+    "flag": "mintable (issuer power on established token - explain it)",
+    "evidence": "is_mintable=1",
+    "source": "goplus"
+   },
+   {
+    "severity": "medium",
+    "flag": "owner can pause transfers / trading toggle (issuer power on established token - explain it)",
+    "evidence": "transfer_pausable=1",
+    "source": "goplus"
+   },
+   {
+    "severity": "medium",
+    "flag": "blacklist function (issuer power on established token - explain it)",
+    "evidence": "is_blacklisted=1",
+    "source": "goplus"
+   },
+   {
+    "severity": "medium",
+    "flag": "external call in transfer path",
+    "evidence": "external_call=1",
+    "source": "goplus"
+   },
+   {
+    "severity": "info",
+    "flag": "trending on GeckoTerminal (attention only)",
+    "evidence": "trending_pools",
+    "source": "geckoterminal"
+   }
+  ],
+  "verdict": {
+   "draft_verdict": "WATCH",
+   "why": "1 high / 4 medium flag(s) - gates remain: owner can change balances; mintable (issuer power on established token - explain it); owner can pause transfers / trading toggle (issuer power on established token - explain it); blacklist function (issuer power on established token - explain it)",
+   "established_token_heuristic": true,
+   "incomplete": false,
+   "counts": {
+    "critical": 0,
+    "high": 1,
+    "medium": 4,
+    "info": 1
+   },
+   "note": "DRAFT per desk-heuristics ladder. The analyst writes the final verdict. Heuristics, not proof. No flags ≠ safe. Not investment advice."
+  },
+  "unknown_sources": [],
+  "explorer": "https://tronscan.org/#/address/TFake11111111111111111111111111124",
+  "disclaimer": "Heuristics, not proof. No flags ≠ safe. Not investment advice."
+ },
+ "error": null
+}
