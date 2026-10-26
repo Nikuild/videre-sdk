@@ -13,6 +13,13 @@ This package holds the **public contract** of the Videre API:
 
 > **Heuristics, not proof. No flags ≠ safe. Not investment advice.** Videre never prints "SAFE".
 
+## Demo
+
+[![Videre demo walkthrough](docs/demo-thumb.png)](https://github.com/Nikuild/videre-sdk/releases/download/demo-v1/videre-demo-v3-public.mp4)
+
+11-minute walkthrough of Videre (token, wallet and URL checks, third-party disagreement panel, SDK output):
+[download the video (MP4, 48 MB)](https://github.com/Nikuild/videre-sdk/releases/download/demo-v1/videre-demo-v3-public.mp4) · [release page](https://github.com/Nikuild/videre-sdk/releases/tag/demo-v1)
+
 ## Install
 
 ```bash
