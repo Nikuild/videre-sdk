@@ -5,6 +5,7 @@ export * from "./lib/chains";
 export * from "./lib/validation";
 export * from "./lib/time";
 export * from "./lib/redact";
+export * from "./lib/sig-decoder";
 export { buildReport } from "./lib/report";
 export type * from "./lib/report";
 export { fmt } from "./i18n/fmt";
