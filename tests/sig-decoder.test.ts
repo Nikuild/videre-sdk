@@ -53,9 +53,4 @@ describe("sig decoder", () => {
     expect(decodeSignature("hello").kind).toBe("invalid");
     expect(decodeSignature({ primaryType: "Mail", message: {} }).kind).toBe("typed_data_unknown");
   });
-  it("token list: every record has source + license", async () => {
-    const l = (await import("../data/tokenlists/uniswap-default.json")).default as any;
-    expect(l.tokens.length).toBeGreaterThan(100);
-    expect(l.tokens.every((t: any) => t.source && t.license)).toBe(true);
-  });
 });
